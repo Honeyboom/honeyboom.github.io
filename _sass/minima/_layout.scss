@@ -269,9 +269,15 @@
  * Post Page
  */
 
+.post-container {
+  display: flex;
+  flex-flow: row nowrap;
+  @include media-query($on-palm) {
+    flex-flow: column nowrap;
+  }
+}
 
  .post-content {
-    display: inline-block;
     margin-bottom: $spacing-unit;
     p.post-meta {
       text-align: justify;
@@ -279,13 +285,11 @@
   }
 
   .post-content-img {
-    margin-left: 400px;
     p.post-meta {
       text-align: justify;
     }
     @include media-query($on-palm) {
       margin-left: 0px;
-      display: inline-block;
       margin-bottom: $small-spacing-unit;
     }
   }
@@ -295,9 +299,7 @@
     height: auto;
     max-width: 360px;
     max-height: 200px;
-    min-width: 300px;
-    float: left;
-    display: inline-block;
+    min-width: 360px;
     margin-right: $spacing-unit;
     margin-bottom: $spacing-unit;
     @include media-query($on-palm) {
