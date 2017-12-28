@@ -270,29 +270,40 @@
  * Post Page
  */
 
-.post-container {
-  overflow: auto;
-}
 
-.post-content {
-  margin-bottom: $small-spacing-unit;
-  p.post-meta {
-    text-align: justify;
+ .post-content {
+    display: inline-block;
+    margin-bottom: $spacing-unit;
+    p.post-meta {
+      text-align: justify;
+    }
   }
-}
 
-.post-content-img {
-  margin-bottom: $small-spacing-unit;
-  width: 55%;
-  p.post-meta {
-    text-align: justify;
+  .post-content-img {
+    margin-left: 400px;
+    p.post-meta {
+      text-align: justify;
+    }
+    @include media-query($on-palm) {
+      margin-left: 0px;
+      display: inline-block;
+      margin-bottom: $small-spacing-unit;
+    }
   }
-}
 
-.post-thumb {
-  float: right;
-  img {
-    display: block;
+  .post-thumb {
+    width: auto;
+    height: auto;
+    max-width: 360px;
+    max-height: 200px;
+    min-width: 300px;
+    float: left;
+    display: inline-block;
+    margin-right: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    @include media-query($on-palm) {
+      margin-right: 0px;
+      margin-bottom: $small-spacing-unit;
+    }
   }
-}
 
