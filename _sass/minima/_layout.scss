@@ -108,7 +108,11 @@
  */
 .site-footer {
   border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: $spacing-unit;
+}
+
+.site-footer p {
+  text-align: justify;
 }
 
 .footer-heading {
@@ -116,68 +120,63 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list,
-.footer-list {
-  list-style: none;
-  margin-left: 0;
-}
-
-.footer-description {
-  font-size: $small-font-size;
+.footer-wrapper {
+  
 }
 
 .footer-col-wrapper {
-  @include relative-font-size(0.9375);
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding-bottom: $spacing-unit;
+  @include media-query($on-palm) {
+    justify-content: unset;
+  }
+}
+
+.footer-col-wrapper ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.footer-col-wrapper > ul {
+  display: table;
+}
+
+.footer-col-wrapper > ul > li {
+  display: table-cell;
+}
+
+.footer-col-wrapper > ul > li:first-child {
+  padding-left: 0;
+}
+
+.footer-col-wrapper > ul > li {
+  padding-left: $big-spacing-unit;
+  margin-left: 0;
+}
+
+.footer-col-wrapper > ul > li ul li {
+  font-size: $small-font-size;
+  @include media-query($on-palm) {
+    margin-bottom: 5px;
+    overflow-x: hidden;
+  }
+}
+
+.footer-col-wrapper > ul > li h2 {
   color: $grey-color;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
+  font-size: $base-font-size;
 }
 
-.footer-col {
-  float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+
+.footer-description {
+  font-size: $small-font-size;
+  color: $grey-color;
 }
 
-.footer-col-1 {
-  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-  width:         calc(25% - (#{$spacing-unit} / 2));
-}
 
-.footer-col-2 {
-  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-  width:         calc(25% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-  width:         calc(25% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-4 {
-  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-  width:         calc(25% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2,
-  .footer-col-3,
-  .footer-col-4 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-
-}
-
-@include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
-  }
-}
 
 
 

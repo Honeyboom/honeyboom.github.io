@@ -1,66 +1,65 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
+  <div class="footer-wrapper">
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-	<h2>Contact</h2>
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
+      <ul>
+        <li class="footer-col-1">
+	  <h2>Connect</h2>
+          <ul class="social-media-list">
+            {% if site.facebook_username %}
+            <li>
+              {% include social-icon.html name="facebook" username=site.facebook_username footer=true %}
+            </li>
             {% endif %}
-          </li>
-            {% if site.email %}
-          <li>
-	    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-          </li>
+
+            {% if site.medium_username %}
+            <li>
+              {% include social-icon.html name="medium" username=site.medium_username footer=true %}
+            </li>
             {% endif %}
-	  <li>
-	  </li>
-        </ul>
-      </div>
+  
+	    {% if site.youtube_username %}
+            <li>
+              {% include social-icon.html name="youtube" username=site.youtube_username footer=true %}
+            </li>
+            {% endif %}
+          </ul>
+        </li>
+  
+        <li class="footer-col-2">
+          <h2>Legal</h2>
+          <ul class="footer-list">
+  	    <li>
+              <a href="{{ 'documentation/organization' | relative_url }}" role="link">Honeyboom LPP</a>
+            </li>
+            <li>
+	      <a href="{{ 'documentation/organization#pp' | relative_url }}" role="link">Terms, Conditions, Privacy Policy</a>
+            </li>
+            <li>
+              <a href="{{ 'documentation/organization#uncopyright' | relative_url }}" role="link">Uncopyright</a>
+            </li>
+          </ul>
+        </li>
 
-      <div class="footer-col footer-col-2">
-	<h2>Connect</h2>
-        <ul class="social-media-list">
-          {% if site.facebook_username %}
-          <li>
-            {% include social-icon.html name="facebook" username=site.facebook_username footer=true %}
-          </li>
-          {% endif %}
-
-          {% if site.medium_username %}
-          <li>
-            {% include social-icon.html name="medium" username=site.medium_username footer=true %}
-          </li>
-          {% endif %}
-
-	  {% if site.youtube_username %}
-          <li>
-            {% include social-icon.html name="youtube" username=site.youtube_username footer=true %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <h2>Legal</h2>
-        <ul class="footer-list">
-  	  <li>
-	    <a href="{{ 'documentation/organization' | relative_url }}" role="link">Honeyboom LPP</a>
-	  </li>
-          <li>
-	    <a href="{{ 'documentation/organization#pp' | relative_url }}" role="link">Terms, Conditions, Privacy Policy</a>
-	  </li>
-	  <li>
-	    <a href="{{ 'documentation/organization#uncopyright' | relative_url }}" role="link">Uncopyright</a>
-	  </li>
-	</ul>
-      </div>
+        <li class="footer-col-3">
+	  <h2>Contact</h2>
+          <ul class="contact-list">
+            <li>
+              {% if site.author %}
+                {{ site.author | escape }}
+              {% else %}
+                {{ site.title | escape }}
+              {% endif %}
+            </li>
+              {% if site.email %}
+            <li>
+	      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            </li>
+              {% endif %}
+          </ul>
+        </li>        
+      </ul>
     </div>
-
     <p class="footer-description">Honeyboom offers <a href="/free-tools">tools and inspiration</a> to help you build vibrant relationships. <a href="/silvia-michal">Silvia and Michal</a> share their journey as they deepen their relationship with each other, their friends and family, themselves, and people they meet as they travel the world.</p>
   </div>
 
