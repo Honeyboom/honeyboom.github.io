@@ -26,3 +26,11 @@ permalink: /free-tools/
 ------------
 
 &nbsp;
+
+{% include sorting-table.html %}
+
+&nbsp;
+
+-------------
+
+&nbsp;
