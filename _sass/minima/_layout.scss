@@ -120,9 +120,6 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.footer-wrapper {
-  
-}
 
 .footer-col-wrapper {
   display: flex;
@@ -305,6 +302,24 @@
     @include media-query($on-palm) {
       margin-right: 0px;
       margin-bottom: $small-spacing-unit;
+      min-width: 160px;
     }
   }
+
+.hidden {
+  display: none!important;
+  visibility: hidden!important;
+}
+
+.active {
+  color: $grey-color;
+}
+
+.blog-list {
+  margin-left: 0;
+  list-style-type: none;
+  li {
+    margin-bottom: $big-spacing-unit;
+  }
+}
 
