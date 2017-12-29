@@ -2,13 +2,17 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
+
+.bg-image {
+  border-bottom: 5px solid $grey-color-dark;
+}
+
 
 .site-title {
   @include relative-font-size(1.625);
@@ -129,6 +133,7 @@
   padding-bottom: $spacing-unit;
   @include media-query($on-palm) {
     justify-content: unset;
+    overflow: auto;
   }
 }
 
@@ -158,7 +163,6 @@
   font-size: $small-font-size;
   @include media-query($on-palm) {
     margin-bottom: 5px;
-    overflow-x: hidden;
   }
 }
 
@@ -174,6 +178,19 @@
 }
 
 
+.email-palm {
+  display: none;
+}
+
+@include media-query($on-palm) {
+  .email-laptop {
+    display: none;
+    visibility: hidden;
+  }
+  .email-palm {
+    display: unset;
+  }
+}
 
 
 
@@ -295,7 +312,6 @@
   width: auto;
   height: auto;
   max-width: 360px;
-  max-height: 200px;
   min-width: 360px;
   margin-right: $spacing-unit;
   margin-bottom: $spacing-unit;

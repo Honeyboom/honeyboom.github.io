@@ -24,6 +24,7 @@ url: "https://www.honeyboom.xyz" # the base hostname & protocol for your site, e
 facebook_username: honeyboom.xyz
 medium_username: honeyboom-xyz
 youtube_username: channel/UCFkEEtX7yPtYD0Om0GPwL7w
+bg-image: /assets/images/hb-background.jpg
 
 # Build settings
 markdown: kramdown
