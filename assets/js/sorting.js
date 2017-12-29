@@ -23,7 +23,30 @@ function setActiveTag(tag) {
     	item.classList.add('active');
 		}
   }
+	
+ 	//displays a message on sorting table of tags being used
+  if(tagsArray.length === 1){
+		var text = "Showing posts containing the tag <b>" + tagsArray[0] + "</b>.";
+  }
+	else {
+		var text = "Showing posts containing the tags ";
+		for(i=0; i < tagsArray.length; i++){
+			if(i + 1 === tagsArray.length) {
+				text += " and <b>" + tagsArray[i] + "</b>.";			
+			}
+			else if(i === 0){
+				text += "<b>" + tagsArray[i] + "</b>";			
+			}
+			else {
+				text += ", <b>" + tagsArray[i] + "</b>";
+			}	
+		}
+	}
+	var elem = document.getElementById('selected-tags-text');
+  elem.innerHTML = text;
 }
+
+
 
 function showContainer() {
   // loop through all lists and hide them
@@ -45,13 +68,16 @@ function showContainer() {
 }
 
 
-//shows posts ordered by jekyll
+
 function order(type) {
 	//loops through all tags and removes the active class
   var items = document.getElementsByClassName('blog-tag-item');
   for(var i=0; i < items.length; i++) {
     items[i].setAttribute('class', 'blog-tag-item');
   }
+	//update sorting info
+  var tag = document.getElementById('selected-tags-text');
+  tag.innerHTML = "Showing <b>all</b> posts ordered by date.";
 	
 	//shows all posts in chronological order
   if(type === "chrono-date") {
