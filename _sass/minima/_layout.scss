@@ -344,9 +344,24 @@
 
 .sorting-table {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   ul {
     list-style-type: none;
   }
+}
+
+.blog-tags-list {
+	-moz-column-count: 8;
+  -moz-column-gap: 15px;
+	-moz-column-fill: auto;
+  -webkit-column-count: 8;
+  -webkit-column-gap: 15px;
+	-webkit-column-fill: auto;
+  column-count: 8;
+  column-gap: 15px;
+	column-fill: auto;
+	li {
+		overflow: hidden;	
+	}
 }
 

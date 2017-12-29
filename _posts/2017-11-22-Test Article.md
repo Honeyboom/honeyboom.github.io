@@ -2,7 +2,7 @@
 layout: post
 title: "Test Article"
 categories: misc
-tags: link new
+tags: link new amazing verbal phone dinossaur
 link: http://www.youtube.com
 image: /assets/images/hb-michal.jpg
 ---
