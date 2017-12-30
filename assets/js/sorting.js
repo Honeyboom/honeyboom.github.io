@@ -9,7 +9,6 @@ function filter(tag) {
 
 function setActiveTag(tag) {
   //if not active, set tag to active, else remove active
-  document.getElementById('chrono-date-item').classList.remove('active');
   var item = document.getElementById(tag + '-item');
   if(item) {
     if(item.classList.contains('active')) {
@@ -81,7 +80,6 @@ function order(type) {
 	
 	//shows all posts in chronological order
   if(type === "chrono-date") {
-    document.getElementById('chrono-date-item').classList.add('active');
   	var lists = document.getElementsByClassName('post-list-item');
     for(var i=0; i < lists.length; i++) {
       lists[i].classList.remove('hidden');
