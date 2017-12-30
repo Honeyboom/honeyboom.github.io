@@ -2,10 +2,10 @@
 layout: post
 title:  Welcome to Jekyll!
 date:   2017-12-12 18:38:08 +0000
-categories: jekyll test
+categories: jekyll test 
 image: /assets/posts/2017-12-12-welcome-to-jekyll/pic.png
 author: Honeyboom
-tags: jekyll test new
+tags: jekyll test new cat dog doggo zed wowwhatahugetag
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

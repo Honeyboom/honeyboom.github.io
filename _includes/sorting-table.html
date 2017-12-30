@@ -2,18 +2,21 @@
   <p>Sort posts by:</p>
   <ul>
     <li class="active" id="chrono-date-item">
-      <a href onclick="order('chrono-date'); return false;">Chronological</a>
+      <a href onclick="order('chrono-date'); return false;">All Posts</a>
     </li>
   </ul>
   
-  <ul class="blog-tags-list">
-    {% assign sorted_tags = site.tags | sort %}
-    {% for tag in sorted_tags %}
-      {% assign t = tag | first %}
-      {% assign posts = tag | last %}
-      <li class="blog-tag-item" id="{{ t }}-item">
-        <a href onclick="filter('{{ t }}'); return false;">#{{ t }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+	<div class="tags-container">
+  	<ul class="blog-tags-list">
+  	  {% assign sorted_tags = site.tags | sort %}
+  	  {% for tag in sorted_tags %}
+  	    {% assign t = tag | first %}
+  	    {% assign posts = tag | last %}
+  	    <li class="blog-tag-item" id="{{ t }}-item">
+  	      <a href onclick="filter('{{ t }}'); return false;">#{{ t }}</a>
+  	    </li>
+  	  {% endfor %}
+ 	 	</ul>
+	</div>
+  <p id="selected-tags-text">Showing <b>all</b> posts ordered by date.</p>
 </div>

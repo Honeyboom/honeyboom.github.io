@@ -4,8 +4,13 @@
     <div class="footer-col-wrapper">
       <ul>
         <li class="footer-col-1">
-	  <h2>Connect</h2>
+	  			<h2>Connect</h2>
           <ul class="social-media-list">
+	    			{% if site.youtube_username %}
+            <li>
+              {% include social-icon.html name="youtube" username=site.youtube_username footer=true %}
+            </li>
+            {% endif %}
             {% if site.facebook_username %}
             <li>
               {% include social-icon.html name="facebook" username=site.facebook_username footer=true %}
@@ -17,23 +22,17 @@
               {% include social-icon.html name="medium" username=site.medium_username footer=true %}
             </li>
             {% endif %}
-  
-	    {% if site.youtube_username %}
-            <li>
-              {% include social-icon.html name="youtube" username=site.youtube_username footer=true %}
-            </li>
-            {% endif %}
           </ul>
         </li>
   
         <li class="footer-col-2">
           <h2>Legal</h2>
           <ul class="footer-list">
-  	    <li>
-              <a href="{{ 'documentation/organization' | relative_url }}" role="link">Honeyboom LPP</a>
+  	    		<li>
+              <a href="{{ 'documentation/organization' | relative_url }}" role="link">Honeyboom LLP</a>
             </li>
             <li>
-	      <a href="{{ 'documentation/organization#pp' | relative_url }}" role="link">Terms, Conditions, Privacy Policy</a>
+	      			<a href="{{ 'documentation/organization#pp' | relative_url }}" role="link">Terms, Conditions, Privacy Policy</a>
             </li>
             <li>
               <a href="{{ 'documentation/organization#uncopyright' | relative_url }}" role="link">Uncopyright</a>
@@ -42,7 +41,7 @@
         </li>
 
         <li class="footer-col-3">
-	  <h2>Contact</h2>
+	  			<h2>Contact</h2>
           <ul class="contact-list">
             <li>
               {% if site.author %}
@@ -53,7 +52,8 @@
             </li>
               {% if site.email %}
             <li>
-	      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+	      			<a href="mailto:{{ site.email }}" class="email-laptop">{{ site.email }}</a>
+              <a href="mailto:{{ site.email }}" class="email-palm">Email</a>
             </li>
               {% endif %}
           </ul>
