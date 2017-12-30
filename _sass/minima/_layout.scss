@@ -377,6 +377,7 @@
 .profile-container {
   display: flex;
   flex-flow: row nowrap;
+  margin-bottom: $spacing-unit;
   @include media-query($on-palm) {
     flex-flow: column nowrap;
   }
