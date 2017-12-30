@@ -294,6 +294,8 @@
 .post-content {
   margin-bottom: $spacing-unit;
   p.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
     text-align: justify;
   }
 }
@@ -322,6 +324,11 @@
   }
 }
 
+
+/*
+ * Sorting Table
+ */
+
 .hidden {
   display: none!important;
   visibility: hidden!important;
@@ -342,8 +349,6 @@
   }
 }
 
-
-
 .tags-container {
 	text-align: center;
 	margin-bottom: $spacing-unit;
@@ -361,6 +366,56 @@
 		a {
 			color: $grey-color-dark;		
 		}
+	}
+}
+
+
+/*
+ * Silvia & Michal
+ */
+
+.profile-container {
+  display: flex;
+  flex-flow: row nowrap;
+  @include media-query($on-palm) {
+    flex-flow: column nowrap;
+  }
+}
+
+.profile-text-container {
+  p {
+    text-align: justify;
+		font-size: $small-font-size;
+  	color: $text-color;
+  }
+  @include media-query($on-palm) {
+    margin-left: 0px;
+    margin-bottom: $small-spacing-unit;
+  }
+}
+
+.profile-pic {
+  width: auto;
+  height: auto;
+  max-width: 360px;
+  min-width: 360px;
+  margin-right: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  @include media-query($on-palm) {
+    margin-right: 0px;
+    margin-bottom: $small-spacing-unit;
+    min-width: 160px;
+  }
+}
+
+.sm-social-list {
+	li {
+		font-size: $small-font-size;
+	}
+	margin-left: 0;
+	li {
+		display: inline-block;
+		padding-right: $small-spacing-unit;	
 	}
 }
 
