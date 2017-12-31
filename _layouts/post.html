@@ -28,15 +28,18 @@ layout: default
     {{ content }}
   </div>
 
-  {% if site.disqus.shortname %}
+	<div class="bottom-tags">
+		{% assign sorted_tags = page.tags | sort %}
+	  {% if sorted_tags %}
+	    <p>Tags: </p>
+  	{% endif %}
+	  {% for tag in sorted_tags %}
+	    <span class="tag"><a href="/free-tools/#{{ tag }}">{{ tag }}</a>&nbsp</span>
+  	{% endfor %}
+	</div>
+
+  {% if site.disqus_shortname %}
     {% include disqus_comments.html %}
   {% endif %}
 
-  {% assign sorted_tags = page.tags | sort %}
-  {% if sorted_tags %}
-    <p>Tags: </p>
-  {% endif %}
-  {% for tag in sorted_tags %}
-    <span class="tag"><a href="/free-tools/#{{ tag }}">{{ tag }}</a>&nbsp</span>
-  {% endfor %}
 </article>
