@@ -14,9 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Honeyboom
+description: "Dont forget to edit this description"
 email: honeyboom.xyz@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.honeyboom.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+author: "Honeyboom"
 youtube_username: channel/UCFkEEtX7yPtYD0Om0GPwL7w
 facebook_username: honeyboom.xyz
 medium_username: honeyboom-xyz
@@ -29,9 +31,11 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-site-map
 
 
 # Site menu settings
