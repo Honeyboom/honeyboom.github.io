@@ -11,6 +11,8 @@
 
 .bg-image {
   border-bottom: 5px solid $grey-color-dark;
+  max-height: calc(100vh - 60px);
+	min-width: 100%;
 }
 
 
@@ -198,6 +200,47 @@
 }
 
 
+/**
+ * Homepage
+ */
+
+.home-pictures {
+	margin-top: $big-spacing-unit;
+	margin-bottom: $big-spacing-unit;
+}
+
+.pictures-container {
+	text-align: center;
+	justify-content: center;
+	ul {
+		list-style-type: none;
+		margin: 0;
+	}
+	li {
+		display: inline-block;
+		margin: 0 5vw 8vh 0;
+		width: calc((80% - 10px - 10vw) / 3);
+		width: -webkit-calc((80% - 10px - 10vw) / 3);
+		@include media-query($on-palm) {
+			margin: 0 5vw 4vh 0;
+		}
+	}
+	li:nth-child(3) {
+		margin-right: 0;	
+	}
+}
+
+
+.homepage-text {
+	text-align: justify;
+	@include media-query($on-palm) {
+		font-size: $small-font-size;	
+	}
+}
+
+
+
+
 
 /**
  * Page content
@@ -383,9 +426,17 @@
 
 
 
-/*
+/**
  * Sorting Table
  */
+
+.sorting-table {
+	p {
+		@include media-query($on-palm) {
+			font-size: $small-font-size;
+		}
+	}
+}
 
 .hidden {
   display: none!important;
@@ -424,11 +475,17 @@
 		a {
 			color: $grey-color-dark;		
 		}
+		@include media-query($on-palm) {
+			padding: 7px 14px;
+			margin: 0 4px 4px 0;
+			font-size: $small-font-size;
+		}
 	}
 }
 
 
-/*
+
+/**
  * Silvia & Michal
  */
 
