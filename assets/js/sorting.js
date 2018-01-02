@@ -42,8 +42,8 @@ function setActiveTag(tag) {
 			}	
 		}
 	}
-	var elem = document.getElementById('selected-tags-text');
-  elem.innerHTML = text;
+	var elem = document.getElementsByClassName('selected-tags-text');
+  elem[0].innerHTML = text;
 }
 
 
@@ -76,8 +76,8 @@ function order(type) {
     items[i].setAttribute('class', 'blog-tag-item');
   }
 	//update sorting info
-  var tag = document.getElementById('selected-tags-text');
-  tag.innerHTML = "Showing <b>all</b> posts ordered by date.";
+  var tag = document.getElementsByClassName('selected-tags-text');
+  tag[0].innerHTML = "Showing <b>all</b> posts ordered by date.";
 	
 	//shows all posts in chronological order
   if(type === "chrono-date") {
@@ -101,7 +101,7 @@ function removeHash () {
 window.onload = function () {
   if(window.location.hash) {
     var tag = window.location.hash.split('#')[1];
-    var sortTable = document.getElementsByClassName('sorting-table');
+    var sortTable = document.getElementsByClassName('selected-tags-text');
     sortTable[0].setAttribute('id', tag);
     filter(tag);
     document.location="#"+tag;
