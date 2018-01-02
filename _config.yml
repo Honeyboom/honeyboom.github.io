@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Honeyboom
-description: "Dont forget to edit this description"
+description: "Sharing tools for vibrant relationships"
 email: honeyboom.xyz@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.honeyboom.xyz" # the base hostname & protocol for your site, e.g. http://example.com
@@ -52,7 +52,7 @@ collections:
     permalink: /:collection/:path
 # End
 
-permalink: /:title/
+permalink: /articles/:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
