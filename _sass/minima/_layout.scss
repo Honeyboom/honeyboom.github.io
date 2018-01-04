@@ -225,7 +225,7 @@
 			margin: 0 5vw 4vh 0;
 		}
 	}
-	li:nth-child(3) {
+	li:nth-child(3), li:last-child {
 		margin-right: 0;	
 	}
 }
@@ -327,7 +327,7 @@
 }
 
 .bottom-tags {
-  margin-bottom: $big-spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 /**
@@ -424,6 +424,14 @@
   content: "\25b2";
 }
 
+
+.back-button {
+	text-align: center;
+	margin-bottom: $spacing-unit;
+	a{
+		color: $text-color;
+	}
+}
 
 
 /**
