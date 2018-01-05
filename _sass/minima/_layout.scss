@@ -11,6 +11,8 @@
 
 .bg-image {
   border-bottom: 5px solid $grey-color-dark;
+  max-height: calc(100vh - 60px);
+	min-width: 100%;
 }
 
 
@@ -53,8 +55,8 @@
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
+    top: 42.6vw;
+		right: 8px;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
@@ -117,6 +119,11 @@
 
 .site-footer p {
   text-align: center;
+}
+
+.site-map a {
+  font-size: $small-font-size;
+  color: $text-color;
 }
 
 .footer-heading {
@@ -191,6 +198,47 @@
     display: unset;
   }
 }
+
+
+/**
+ * Homepage
+ */
+
+.home-pictures {
+	margin-top: $big-spacing-unit;
+	margin-bottom: $big-spacing-unit;
+}
+
+.pictures-container {
+	text-align: center;
+	justify-content: center;
+	ul {
+		list-style-type: none;
+		margin: 0;
+	}
+	li {
+		display: inline-block;
+		margin: 0 5vw 8vh 0;
+		width: calc((80% - 10px - 10vw) / 3);
+		width: -webkit-calc((80% - 10px - 10vw) / 3);
+		@include media-query($on-palm) {
+			margin: 0 5vw 4vh 0;
+		}
+	}
+	li:nth-child(3), li:last-child {
+		margin-right: 0;	
+	}
+}
+
+
+.homepage-text {
+	text-align: justify;
+	@include media-query($on-palm) {
+		font-size: $small-font-size;	
+	}
+}
+
+
 
 
 
@@ -279,7 +327,7 @@
 }
 
 .bottom-tags {
-  margin-bottom: $big-spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 /**
@@ -328,9 +376,75 @@
 }
 
 
-/*
+#back-to-top {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  position: fixed;
+  right: $big-spacing-unit;
+  bottom: $big-spacing-unit;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #000;
+  opacity: 0.5;
+  cursor: pointer;
+	@include media-query($on-palm) {
+		right: $spacing-unit;
+  	bottom: $spacing-unit;
+		width: 30px;
+		height: 30px;
+	} 
+  a {
+		width: inherit;
+		text-align: center;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+#back-to-top p {
+  font-size: 2rem;
+  color: #FFF;
+  opacity: inherit;
+  margin: 0;
+	@include media-query($on-palm) {
+		font-size: 1.5rem;
+	} 
+}
+
+.arrow {
+	line-height: 1;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.arrow:before {
+  content: "\25b2";
+}
+
+
+.back-button {
+	text-align: center;
+	margin-bottom: $spacing-unit;
+	a{
+		color: $text-color;
+	}
+}
+
+
+/**
  * Sorting Table
  */
+
+.sorting-table {
+	p {
+		@include media-query($on-palm) {
+			font-size: $small-font-size;
+		}
+	}
+}
 
 .hidden {
   display: none!important;
@@ -361,19 +475,31 @@
   }
 	li {
 		display: inline-block;
-		padding: 10px 18px;
     margin: 0 8px 8px 0;
     border: 1px solid #eee;
     border-radius: 20px;
 		color: $text-color;
 		a {
-			color: $grey-color-dark;		
+			display: block;
+			color: $grey-color-dark;
+			padding: 10px 18px;	
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		@include media-query($on-palm) {
+			margin: 0 4px 4px 0;
+			font-size: $small-font-size;
+			a {
+				padding: 7px 14px;
+			}
 		}
 	}
 }
 
 
-/*
+
+/**
  * Silvia & Michal
  */
 
