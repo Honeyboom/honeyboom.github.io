@@ -4,6 +4,9 @@
   {% include head.html %}
 
   <body>
+		{% if page.url == "/" %}  
+		  <img src="{{ site.bg-image }}" alt="Background image Honeyboom" class="bg-image">  
+	  {% endif %}
 
     {% include header.html %}
 

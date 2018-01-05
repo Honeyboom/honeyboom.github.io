@@ -172,7 +172,7 @@ window.onload = function () {
     document.location="#"+tag;
     removeHash();
   }
-  else {
+  else if(window.location.pathname === "/free-tools/") {
   //to show pags previously selected and stored
     updateTags();
   }
