@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Honeyboom
-description: "Sharing tools for vibrant relationships"
 email: honeyboom.xyz@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.honeyboom.xyz" # the base hostname & protocol for your site, e.g. http://example.com
@@ -22,9 +21,8 @@ author: "Honeyboom"
 youtube_username: channel/UCFkEEtX7yPtYD0Om0GPwL7w
 facebook_username: honeyboom.xyz
 medium_username: honeyboom-xyz
+disqus_shortname: honeyboom
 bg-image: /assets/images/hb-background.jpg
-google_analytics: true
-disqus_shortname: webtester5
 
 # Build settings
 markdown: kramdown
@@ -51,9 +49,16 @@ collections:
   documentation:
     output: true
     permalink: /:collection/:path
-# End
 
+
+# Articles url
 permalink: /articles/:title/
+
+# SEO
+description: "Sharing tools for vibrant relationships"
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -21,7 +21,7 @@ title: Organization
 
 ## Credits {#credits}
 
-Built on jekyll, by [Joao-link], hosted on github, using minima theme.
+Built on jekyll, by @danielbbastos, hosted on github, using minima theme.
 
 &nbsp;
 
