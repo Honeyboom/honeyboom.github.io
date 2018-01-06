@@ -1,0 +1,196 @@
+diff --git a/Gemfile b/Gemfile
+index 20e2ad6..2f241f2 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -23,6 +23,7 @@ group :jekyll_plugins do
+   gem "jekyll-feed", "~> 0.6"
+   gem 'jekyll-seo-tag'
+   gem "jekyll-github-metadata"
++  gem 'jekyll-mentions'
+   gem 'jekyll-sitemap'
+ end
+ 
+diff --git a/Gemfile.lock b/Gemfile.lock
+index 8cd152e..107d03f 100644
+--- a/Gemfile.lock
++++ b/Gemfile.lock
+@@ -235,6 +235,7 @@ DEPENDENCIES
+   github-pages
+   jekyll-feed (~> 0.6)
+   jekyll-github-metadata
++  jekyll-mentions
+   jekyll-seo-tag
+   jekyll-sitemap
+   tzinfo-data
+diff --git a/_config.yml b/_config.yml
+index 45d30c6..e4a0cfa 100644
+--- a/_config.yml
++++ b/_config.yml
+@@ -14,18 +14,16 @@
+ # You can create any custom variable you would like, and they will be accessible
+ # in the templates via {{ site.myvariable }}.
+ title: Honeyboom
+-description: "Sharing Tools for Vibrant Relationships"
+ email: honeyboom.xyz@gmail.com
+ baseurl: "" # the subpath of your site, e.g. /blog
+ url: "https://www.honeyboom.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+-enforce_ssl: honeyboom.xyz
+ author: "Honeyboom"
+ youtube_username: channel/UCFkEEtX7yPtYD0Om0GPwL7w
+ facebook_username: honeyboom.xyz
+ medium_username: honeyboom-xyz
++disqus_shortname: honeyboom
+ bg-image: /assets/images/hb-background.jpg
+-google_analytics: true
+-disqus_shortname: webtester5
++enforce_ssl: honeyboom.xyz
+ 
+ # Build settings
+ markdown: kramdown
+@@ -36,6 +34,7 @@ plugins:
+   - jekyll-feed
+   - jekyll-seo-tag
+   - jekyll-github-metadata
++  - jekyll-mentions
+   - jekyll-site-map
+ 
+ 
+@@ -51,10 +50,17 @@ collections:
+   documentation:
+     output: true
+     permalink: /:collection/:path
+-# End
+ 
++
++# Articles url
+ permalink: /articles/:title/
+ 
++# SEO
++description: "Sharing tools for vibrant relationships"
++
++
++
++
+ # Exclude from processing.
+ # The following items will not be processed, by default. Create a custom list
+ # to override the default setting.
+diff --git a/_documentation/organization.md b/_documentation/organization.md
+index c77f7ee..d87a101 100644
+--- a/_documentation/organization.md
++++ b/_documentation/organization.md
+@@ -21,7 +21,7 @@ title: Organization
+ 
+ ## Credits {#credits}
+ 
+-Built on jekyll, by [Joao-link], hosted on github, using minima theme.
++Built on jekyll, by @danielbbastos, hosted on github, using minima theme.
+ 
+ &nbsp;
+ 
+diff --git a/_includes/google-analytics.html b/_includes/google-analytics.html
+index eb2a692..163dbf9 100644
+--- a/_includes/google-analytics.html
++++ b/_includes/google-analytics.html
+@@ -1,11 +1,9 @@
++<!-- Global site tag (gtag.js) - Google Analytics -->
++<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111999871-1"></script>
+ <script>
+-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+-
+-  ga('create', '{{ site.google_analytics }}', 'auto');
+-  ga('send', 'pageview');
++  window.dataLayer = window.dataLayer || [];
++  function gtag(){dataLayer.push(arguments);}
++  gtag('js', new Date());
+ 
++  gtag('config', 'UA-111999871-1');
+ </script>
+-  
+diff --git a/_includes/head.html b/_includes/head.html
+index cb002ab..bc9be63 100644
+--- a/_includes/head.html
++++ b/_includes/head.html
+@@ -1,4 +1,8 @@
+ <head>
++	{% include google-analytics.html %}
++
++	<script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>  	
++
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+@@ -11,10 +15,6 @@
+   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+   
+   <script src="/assets/js/sorting.js"></script>
+-  
+-  {% if jekyll.environment == 'production' and site.google_analytics %}
+-  {% include google-analytics.html %}
+-  {% endif %}
+-  
++
+   {% seo %}
+ </head>
+diff --git a/_includes/header.html b/_includes/header.html
+index e5c2f25..4d987ef 100644
+--- a/_includes/header.html
++++ b/_includes/header.html
+@@ -1,7 +1,4 @@
+ <header class="site-header" role="banner">
+-	{% if page.url == "/" %}  
+-		<img src="{{ site.bg-image }}" alt="Background image Honeyboom" class="bg-image">  
+-	{% endif %}
+   <div class="wrapper">
+     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+   
+diff --git a/_layouts/default.html b/_layouts/default.html
+index aaee8d0..b8d038b 100644
+--- a/_layouts/default.html
++++ b/_layouts/default.html
+@@ -4,6 +4,9 @@
+   {% include head.html %}
+ 
+   <body>
++		{% if page.url == "/" %}  
++		  <img src="{{ site.bg-image }}" alt="Background image Honeyboom" class="bg-image">  
++	  {% endif %}
+ 
+     {% include header.html %}
+ 
+diff --git a/_sass/minima/_layout.scss b/_sass/minima/_layout.scss
+index 920290d..f376c41 100644
+--- a/_sass/minima/_layout.scss
++++ b/_sass/minima/_layout.scss
+@@ -55,7 +55,7 @@
+ 
+   @include media-query($on-palm) {
+     position: absolute;
+-    top: 42.6vw;
++    top: 8px;
+ 		right: 8px;
+     background-color: $background-color;
+     border: 1px solid $grey-color-light;
+diff --git a/assets/js/sorting.js b/assets/js/sorting.js
+index 09ea80c..f2719d2 100644
+--- a/assets/js/sorting.js
++++ b/assets/js/sorting.js
+@@ -172,7 +172,7 @@ window.onload = function () {
+     document.location="#"+tag;
+     removeHash();
+   }
+-  else {
++  else if(window.location.pathname === "/free-tools/") {
+   //to show pags previously selected and stored
+     updateTags();
+   }
+diff --git a/google047c10368af82d3a.html b/google047c10368af82d3a.html
+deleted file mode 100644
+index 4f72373..0000000
+--- a/google047c10368af82d3a.html
++++ /dev/null
+@@ -1 +0,0 @@
+-google-site-verification: google047c10368af82d3a.html
+\ No newline at end of file
