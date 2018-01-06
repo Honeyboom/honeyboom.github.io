@@ -8,12 +8,13 @@ layout: default
 			{{ page.title | escape }}
     </h1>
     
-		{% for tag in page.tags %}
-			{% if tag contains "video" %}
-				{% assign video = true %}
-			{% endif %}
-		{% endfor %}
-    {% if page.image and video == false %}
+
+		{% if page.tags contains 'video' %}
+		{% else %}
+			{% assign video = 'false' %}
+		{% endif %}
+
+    {% if page.image and video == 'false' %}
        <img src="{{ page.image }}" alt="Post Image">
     {% endif %}
 
