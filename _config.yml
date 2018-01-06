@@ -37,7 +37,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
   - jekyll-mentions
-  - jekyll-site-map
+  - jekyll-sitemap
 
 
 # Site menu settings
