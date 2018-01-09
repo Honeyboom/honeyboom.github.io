@@ -239,6 +239,10 @@
 }
 
 
+.explore-button {
+	text-align: center;
+	margin-top: $big-spacing-unit;
+}
 
 
 
@@ -503,10 +507,17 @@
  * Silvia & Michal
  */
 
+.silvia-michal-about {
+	margin-bottom: $big-spacing-unit;
+	p {
+		text-align: justify;
+	}
+}
+
 .profile-container {
   display: flex;
   flex-flow: row nowrap;
-  margin-bottom: $spacing-unit;
+  margin-bottom: $big-spacing-unit;
   @include media-query($on-palm) {
     flex-flow: column nowrap;
   }
