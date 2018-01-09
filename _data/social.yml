@@ -1,8 +1,9 @@
 silvia:
-  - name: twitter
-    username: helloiams
   - name: instagram
     username: lovesquares
+  - name: twitter
+    username: helloiams
+
 
 michal:
   - name: facebook
@@ -13,6 +14,3 @@ michal:
     username: michalkorzonek
   - name: linkedin
     username: in/michalkorzonek
-
-
-
