@@ -1,7 +1,7 @@
 
 {% if include.footer %}
   <a href="https://{{ include.name }}.com/{{ include.username }}" target="_blank">
-      <img src="/assets/images/icon-{{ include.name }}.png" alt="social" width="16" class="icon"/>
+      <img src="/assets/images/social/icon-{{ include.name }}.png" alt="social" width="16" class="icon"/>
       {% if include.name == "youtube" %}
 	<span class="username">honeyboom</span>
       {% else %}
@@ -14,7 +14,7 @@
   {% for icon in owner %}
     <li>
     <a href="https://{{ icon.name }}.com/{{ icon.username }}" target="_blank">
-      <img src="/assets/images/icon-{{ icon.name }}.png" alt="social" width="16" class="icon"/>
+      <img src="/assets/images/social/icon-{{ icon.name }}.png" alt="social" width="16" class="icon"/>
       <span class="username">{{ icon.username }}</span>
     </a>
     </li>
