@@ -419,8 +419,8 @@
   opacity: 0.5;
   cursor: pointer;
 	@include media-query($on-palm) {
-		right: $spacing-unit;
-  	bottom: $spacing-unit;
+		right: $big-spacing-unit;
+  	bottom: $big-spacing-unit;
 		width: 30px;
 		height: 30px;
 	} 
