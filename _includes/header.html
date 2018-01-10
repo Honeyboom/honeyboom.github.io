@@ -1,7 +1,11 @@
 <header class="site-header" role="banner">
   <div class="wrapper">
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  
+		<div class="header-logo">
+		  <a href="{{ '/' | relative_url }}">
+			  <img src="/assets/images/logo/logo-small.png" alt="Honeyboom Logo">
+			</a>
+		</div>
+  	<a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
       <!-- Icon de menu mobile -->
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -14,18 +18,17 @@
             </svg>
           </span>
         </label>
-
         <div class="trigger">
           {% for tab in site.menu %}
             {% if tab.title %}
             <a class="page-link" href="{{ tab.url | relative_url }}">{{ tab.title | escape }}</a>
             {% endif %}
           {% endfor %}
-	  <div class="page-link">
-	    <a href="https://youtube.com/{{ site.youtube_username }}" class="header-social" target="_blank"><img src="/assets/images/social/youtube-flat.png" alt="youtube" width="24"/></a>
-	    <a href="https://facebook.com/{{ site.facebook_username }}" class="header-social" target="_blank"><img src="/assets/images/social/facebook-flat.png" alt="facebook" width="22"/></a>
-			<a href="https://medium.com/{{ site.medium_username }}" class="header-social" target="_blank"><img src="/assets/images/social/medium-flat.png" alt="medium" width="24" /></a>
-	  </div>
+	        <div class="page-link">
+	          <a href="https://youtube.com/{{ site.youtube_username }}" class="header-social" target="_blank"><img src="/assets/images/social/youtube-flat.png" alt="youtube" width="24"/></a>
+	          <a href="https://facebook.com/{{ site.facebook_username }}" class="header-social" target="_blank"><img src="/assets/images/social/facebook-flat.png" alt="facebook" width="22"/></a>
+			      <a href="https://medium.com/{{ site.medium_username }}" class="header-social" target="_blank"><img src="/assets/images/social/medium-flat.png" alt="medium" width="24" /></a>
+	        </div>
         </div>
       </nav>
   </div>

@@ -15,18 +15,26 @@
 	min-width: 100%;
 }
 
+.header-logo {
+  display: inline-block;
+  float: left;
+  img {
+    height: $base-line-height * $base-font-size * 2.25;
+  }
+}
 
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
+  color: $text-color;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
-
-  &,
-  &:visited {
-    color: $grey-color-dark;
+  float: left;  
+  
+  &:hover, &:visited {
+    text-decoration: none;
+    color: $text-color;
   }
 }
 
