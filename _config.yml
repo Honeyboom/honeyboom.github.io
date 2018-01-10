@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Honeyboom
-description: "Sharing Tools for Vibrant Relationships"
+description: "Honeyboom offers tools and inspiration to help you build vibrant relationships. Silvia and Michal share their journey as they deepen their relationship with each other, their friends and family, themselves, and people they meet as they travel the world."
 email: honeyboom.xyz@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://honeyboom.xyz" # the base hostname & protocol for your site, e.g. http://example.com
@@ -59,7 +59,7 @@ permalink: /articles/:title/
 
 # SEO
 facebook:
-	app_id: 142037946510430
+  app_id: 142037946510430
   publisher: "https://www.facebook.com/honeyboom.xyz/"
 google_site_verification: UGGcxBN_bxhFME4roFZqDBZwNgJsNUYKHnfPf6B_ias
 social:
