@@ -243,8 +243,22 @@
 
 
 .explore-button {
-	text-align: center;
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
 	margin-top: $big-spacing-unit;
+	border: 1px solid $grey-color;
+  border-radius: 20px;
+	color: $text-color;
+	a {
+		display: block;
+		color: $grey-color-dark;
+		padding: 10px 18px;	
+	}
+}
+
+.explore-button:hover {
+	border-color: $text-color;
 }
 
 
