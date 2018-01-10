@@ -17,7 +17,7 @@ title: Honeyboom
 description: "Sharing Tools for Vibrant Relationships"
 email: honeyboom.xyz@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.honeyboom.xyz" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://honeyboom.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 enforce_ssl: honeyboom.xyz
 author: "Honeyboom"
 youtube_username: channel/UCFkEEtX7yPtYD0Om0GPwL7w
@@ -58,7 +58,16 @@ collections:
 permalink: /articles/:title/
 
 # SEO
-
+facebook:
+	app_id: 142037946510430
+  publisher: "https://www.facebook.com/honeyboom.xyz/"
+#google_site_verification: google047c10368af82d3a.html
+social:
+  name: Honeyboom
+  links:
+    - https://www.facebook.com/honeyboom.xyz/
+    - https://www.youtube.com/channel/UCFkEEtX7yPtYD0Om0GPwL7w
+    - https://medium.com/honeyboom-xyz
 
 
 
