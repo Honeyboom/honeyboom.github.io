@@ -3,7 +3,7 @@ layout: post
 title:  Our morning routine as a digital nomad couple. Activities, self-time and challenges.
 date: 2018-01-04 20:00:01 +0000
 tags: video do-it-yourself self travel
-image: /assets/posts/2018-01-04-morning-routine/morning routine-thumb.jpg
+image: /assets/images/posts/thumbnails/morning-routine-thumb.jpg
 author: Honeyboom
 
 ---

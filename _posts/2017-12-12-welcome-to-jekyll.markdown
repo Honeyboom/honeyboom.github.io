@@ -2,7 +2,7 @@
 layout: post
 title:  Welcome to Jekyll!
 date:   2017-12-12 18:38:08 +0000 
-image: /assets/posts/2017-12-12-welcome-to-jekyll/pic.png
+image: /assets/images/posts/thumbnails/pic.png
 author: Honeyboom
 tags: do-it-yourself self business
 ---

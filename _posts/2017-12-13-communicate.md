@@ -5,7 +5,7 @@ date: 2017-12-13 20:00:01 +0000
 categories: misc
 tags: link do-it-yourself family-and-friends romantic
 link: https://medium.com/honeyboom-xyz/communicate-a1d0b0428809
-image: /assets/posts/2017-12-13-communicate/communicate-thumb.jpeg
+image: /assets/images/posts/thumbnails/communicate-thumb.jpeg
 comments: false
 ---
 
