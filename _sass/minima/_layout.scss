@@ -371,6 +371,13 @@
       @include relative-font-size(1.125);
     }
   }
+  
+  p {
+    text-align: justify;
+    @include media-query($on-palm) {
+      font-size: $small-font-size;
+    }
+  }
 }
 
 .bottom-tags {
@@ -384,6 +391,7 @@
 	padding-top:30px;
 	height:0;
 	overflow:hidden;
+	margin: $big-spacing-unit 0 $big-spacing-unit 0;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
