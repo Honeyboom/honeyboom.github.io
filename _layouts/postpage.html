@@ -9,7 +9,7 @@ layout: default
 <!-- Order all posts by date -->
 <div class="all-posts">
   <ul class="post-list">
-    <!-- If some stuff starts disapeearing, check here first, classes may be conflicting -->
+    <!-- If some stuff starts disappearing, check here first, classes may be conflicting -->
     {% for post in site.posts %}
        {% assign alltags = "post-list-item" %}
        {% assign sorted_tags = post.tags | sort %}
@@ -37,6 +37,7 @@ layout: default
             <h2>
 	    {% if post.link %}
               <a class="post-link" href="{{ post.link }}" target="_blank">
+                <img src="/assets/images/posts/link-icon.png" alt="Post is a link">
 	    {% else %}
               <a class="post-link" href="{{ post.url | relative_url }}">
 	    {% endif %}
