@@ -232,7 +232,7 @@
 
 .home-pictures {
 	margin-top: $big-spacing-unit;
-	margin-bottom: $big-spacing-unit;
+	margin-bottom: $small-spacing-unit;
 }
 
 .pictures-container {
@@ -272,10 +272,10 @@
 	display: inline-block;
 	align-items: center;
 	justify-content: center;
-	margin-top: $big-spacing-unit;
 	border: 1px solid $grey-color;
   border-radius: 20px;
 	color: $text-color;
+	margin-bottom: $small-spacing-unit;
 	a {
 		display: block;
 		color: $grey-color-dark;
