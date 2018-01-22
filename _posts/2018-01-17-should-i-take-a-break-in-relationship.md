@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  How to Use Dance to Improve Your Relationship
-date:   2017-17-22 19:38:08 +0000
+date:   2017-01-17 19:38:08 +0000
 tags: video do-it-yourself romantic
 image: /assets/images/posts/thumbnails/taking-breaks-thumbnail.png
 author: Honeyboom
