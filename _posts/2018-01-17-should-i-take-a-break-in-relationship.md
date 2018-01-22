@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  Should I take a break in my relationship?
-date:   2017-01-17 19:38:08 +0000
+date:   2018-01-17 19:38:08 +0000
 tags: video do-it-yourself romantic
-image: /assets/images/posts/thumbnails/taking-breaks-thumbnail.png
+image: /assets/images/posts/thumbnails/taking-breaks-thumbnail.jpg
 author: Honeyboom
 
 ---
