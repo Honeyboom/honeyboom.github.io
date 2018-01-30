@@ -624,6 +624,11 @@
 	}
 }
 
+.sm-main-image {
+  text-align: center;
+  margin: $spacing-unit 0 $spacing-unit 0;
+}
+
 .profile-container {
   display: flex;
   flex-flow: row nowrap;
