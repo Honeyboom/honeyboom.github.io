@@ -13,4 +13,4 @@ This is what we have been doing, and in this video we talk about how it has been
 
 <div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/rtTR5DKsFsQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 
-[► DOWNLOAD FREE EBOOK ◄[](https://tinyletter.com/honeyboom)
+[► DOWNLOAD FREE EBOOK ◄](https://tinyletter.com/honeyboom)
