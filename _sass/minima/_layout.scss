@@ -256,7 +256,7 @@
 		@include media-query($on-palm) {
 			margin: 0 0 4vh 0;
 			width: 100%;
-			display: block;
+			display: none; //change to block to show up
 			justify-content: center;
 		}
 	}
@@ -622,6 +622,11 @@
 		text-align: justify;
 		font-size: $small-font-size;
 	}
+}
+
+.sm-main-image {
+  text-align: center;
+  margin: $spacing-unit 0 $spacing-unit 0;
 }
 
 .profile-container {
