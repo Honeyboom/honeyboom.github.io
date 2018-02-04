@@ -26,6 +26,7 @@ medium_username: honeyboom-xyz
 disqus_shortname: honeyboom
 bg-image: /assets/images/hb-background.jpg
 enforce_ssl: honeyboom.xyz
+future: false
 
 # Build settings
 markdown: kramdown
