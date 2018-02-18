@@ -223,7 +223,7 @@ pre {
  * NoScript Overlay
  */
  
-#overlay {
+noscript #overlay {
   background: rgba(0,0,0,0.5);
   width: 100%;
   height: 100vh;
@@ -233,7 +233,7 @@ pre {
   z-index: 98;
 }
 
-.no-js {
+noscript .no-js {
   z-index: 99;
   background-color: indianred;
   position: fixed;
