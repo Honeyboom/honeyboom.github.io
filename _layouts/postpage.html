@@ -16,7 +16,7 @@ layout: default
        {% for tag in sorted_tags %}
           {% assign alltags = alltags | append: " " | append: tag %}
        {% endfor %}
-       <li class="{{ alltags }}">
+       <li class="{{ alltags }}" data-posttime="{{ post.date }}">
 	<div class="post-container">     
 	{% if post.image %}
 	  <div class="post-thumb">
