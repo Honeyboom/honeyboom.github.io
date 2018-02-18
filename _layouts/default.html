@@ -4,6 +4,11 @@
   {% include head.html %}
 
   <body>
+    <noscript>
+      <div id="overlay"></div>
+      <div class="no-js">To view our content, please enable JavaScript</div>
+    </noscript>
+  
 		{% if page.url == "/" %}  
 		  <img src="{{ site.bg-image }}" alt="Background image Honeyboom" class="bg-image"> 
 		  <div class="slogan"><p>Sharing Tools for Vibrant Relationships</p></div>

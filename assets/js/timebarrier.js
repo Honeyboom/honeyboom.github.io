@@ -1,5 +1,6 @@
-window.onload = function() {
+function timeBarrier() {
 	var now = new Date();
+	document.getElementsByClassName('all-posts')[0].style.display = 'none';
 	document.querySelectorAll('[data-posttime]').forEach(function(e) {
 		var post_time = new Date(e.getAttribute('data-posttime'));
 		

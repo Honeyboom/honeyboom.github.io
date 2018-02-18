@@ -218,3 +218,27 @@ pre {
 .button-container {
 	text-align: center;
 }
+
+/**
+ * NoScript Overlay
+ */
+ 
+#overlay {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+}
+
+.no-js {
+  z-index: 99;
+  background-color: indianred;
+  position: fixed;
+  height: 2.5em;
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+}

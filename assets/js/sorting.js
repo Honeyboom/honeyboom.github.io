@@ -162,6 +162,10 @@ function removeHash () {
 
 
 window.onload = function () {
+  if(window.location.href.indexOf("free-tools") > -1) {
+    timeBarrier();
+  }
+  
   if(window.location.hash) {
   	tagsArray = [];
 		sessionStorage.setItem("tagsArray", JSON.stringify(tagsArray));	
