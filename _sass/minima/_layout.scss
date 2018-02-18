@@ -445,6 +445,10 @@
  * Post Page
  */
 
+.all-posts {
+  display: none;
+}
+
 .post-container {
   display: flex;
   flex-flow: row nowrap;

@@ -1,14 +1,15 @@
-$(function() {
+window.onload = function() {
 	var now = new Date();
-	$('[data-posttime]').each(function() {
-		var post_time = new Date($(this).data('posttime'));
+	document.querySelectorAll('[data-posttime]').forEach(function(e) {
+		var post_time = new Date(e.getAttribute('data-posttime'));
 		
 		if(post_time > now) {
-			if($(this).is('article')) {
+			if(e.type === 'article') {
 				window.location.href = '/404.html';
 			} else {
-				$(this).hide();
+				e.style.display = 'none';
 			}
 		}
 	});
-});
+	document.getElementsByClassName('all-posts')[0].style.display = 'block';
+}
