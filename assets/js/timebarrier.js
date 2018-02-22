@@ -2,7 +2,7 @@ function timeBarrier() {
 	var now = new Date();
 	document.getElementsByClassName('all-posts')[0].style.display = 'none';
 	document.querySelectorAll('[data-posttime]').forEach(function(e) {
-		var post_time = new Date(e.getAttribute('data-posttime'));
+		var post_time = new Date(e.dataset.posttime);
 		
 		if(post_time > now) {
 			if(e.type === 'article') {

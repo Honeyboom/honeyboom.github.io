@@ -231,6 +231,7 @@ noscript #overlay {
   top: 0;
   left: 0;
   z-index: 98;
+  pointer-events: none
 }
 
 noscript .no-js {
