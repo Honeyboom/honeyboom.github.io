@@ -47,6 +47,8 @@ menu:
     url: "/free-tools"
   - title: "Silvia & Michal"
     url: "/silvia-michal"
+  - title: "Coaching"
+    url: "/coaching"
 
 # Collections settings
 collections:

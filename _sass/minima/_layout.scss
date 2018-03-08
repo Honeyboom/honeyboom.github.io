@@ -78,7 +78,7 @@
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: $small-spacing-unit;
     }
     
     .header-social:not(:first-child) {
@@ -698,4 +698,79 @@
 		padding-right: $small-spacing-unit;	
 	}
 }
+
+
+/**
+ * Coaching
+ */
+ 
+.button-container {
+  display: flex;
+  text-align: center;
+	justify-content: center;
+  
+  .relationship-button {
+    display: block;
+    margin-right: 2em;
+    max-width: 400px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .life-button {
+    display: block;
+    max-width: 400px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @include media-query($on-palm) {
+    display: inline-block;
+  
+    .relationship-button, .life-button {
+      display: inline-block;
+      width: 80%;
+      max-width: 300px;
+      margin: 0 0 4vh 0;
+    }
+  }
+  
+}
+
+
+.email-form {
+  margin-bottom: $spacing-unit;
+}
+
+
+.container {
+  
+  
+  .top-image {
+    display: inline-block;
+    margin-bottom: $spacing-unit;
+  }
+  
+  .text-container {
+    display: inline-block;
+    width: 60%;
+    text-align: justify;
+    font-size: $small-font-size;
+    margin-right: $small-spacing-unit;
+    margin-left: $small-spacing-unit;
+  }
+  
+  .side-image {
+    display: inline-block;
+    width: 35%;
+    float: right;
+  }
+}
+
 
