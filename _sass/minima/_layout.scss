@@ -704,15 +704,22 @@
  * Coaching
  */
  
+ 
+.nice-quote {
+  margin-bottom: $big-spacing-unit;
+} 
+ 
 .button-container {
   display: flex;
   text-align: center;
 	justify-content: center;
+	margin-top: $spacing-unit;
   
   .relationship-button {
     display: block;
     margin-right: 2em;
     max-width: 400px;
+    cursor: pointer;
     
     img {
       width: 100%;
@@ -723,6 +730,7 @@
   .life-button {
     display: block;
     max-width: 400px;
+    cursor: pointer;
     
     img {
       width: 100%;
@@ -744,13 +752,48 @@
 }
 
 
+.relationship-container {
+  margin-top: $big-spacing-unit;
+  text-align: justify;
+  
+  .rel-top-image {
+    margin-bottom: $spacing-unit;
+    text-align: center;
+  }
+  
+  .rel-text-container {
+    font-size: $small-font-size;
+    
+    .coaching-prices {
+      list-style-type: none;
+    }
+    
+    h3 {
+      font-weight: bold;
+    }
+    
+    p {
+      margin: 0 $small-spacing-unit $small-spacing-unit $small-spacing-unit;
+      text-align: justify;
+    }
+  }
+  
+  
+}
+
+.life-container {
+  margin-top: $big-spacing-unit;
+  text-align: justify;
+}
+
+
 .email-form {
   margin-bottom: $spacing-unit;
 }
 
 
+
 .container {
-  
   
   .top-image {
     display: inline-block;
@@ -764,13 +807,28 @@
     font-size: $small-font-size;
     margin-right: $small-spacing-unit;
     margin-left: $small-spacing-unit;
+    float: right;
   }
   
   .side-image {
     display: inline-block;
     width: 35%;
-    float: right;
+  }
+  
+  @include media-query($on-palm) {
+    .text-container {
+      width: auto;
+      float: none;
+    }
+    
+    .side-image {
+      display: block;
+      text-align: center;
+      width: auto;
+    }
+    
   }
 }
+
 
 
