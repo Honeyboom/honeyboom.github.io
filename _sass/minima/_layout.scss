@@ -812,7 +812,6 @@
 .relationship-container {
   margin: 40px 10vw 0 10vw;
   text-align: justify;
-  width: 80%;
   
   .rel-top-image {
     margin-bottom: $spacing-unit;
@@ -891,6 +890,7 @@
 
 
 .bottom-container {
+   margin: 40px 10vw 0 10vw;
   
   .bottom-image {
     display: block;
