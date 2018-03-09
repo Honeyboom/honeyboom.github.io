@@ -837,6 +837,7 @@
   
   .rel-text-container {
     font-size: $small-font-size;
+    margin-bottom: $big-spacing-unit;
     
     .coaching-prices {
       list-style-type: none;
@@ -854,6 +855,7 @@
     
     ul {
       margin-left: $small-spacing-unit + 30px;
+      margin-right: $small-spacing-unit;
     }
   }
   
@@ -877,6 +879,7 @@
   .life-text-container {
     font-size: $small-font-size;
     
+    
     .coaching-prices {
       list-style-type: none;
       margin-left: $small-spacing-unit;
@@ -893,6 +896,7 @@
     
     ul {
       margin-left: $small-spacing-unit + 30px;
+      margin-right: $small-spacing-unit;
     }
   }
   
@@ -975,10 +979,13 @@
     
     ul {
       margin-left: $small-spacing-unit + 30px;
+      margin-right: $small-spacing-unit;
     }
   }
   
   @include media-query($on-palm) {
+    margin: 40px 5vw 0 5vw;
+  
     .text-container {
       width: auto;
       float: none;
