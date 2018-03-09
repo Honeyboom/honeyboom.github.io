@@ -1,27 +1,24 @@
-function relClick() {
-    var rel = document.getElementsByClassName('relationship-container');
-    var life = document.getElementsByClassName('life-container');
-    if(rel[0].style.display === "none") {
-        rel[0].style.display = "block";
-        life[0].style.display = "none";
-    }
-    else {
-        rel[0].style.display = "none";
-    }
-}
+$(document).ready(function(){
 
-function lifeClick() {
-    var rel = document.getElementsByClassName('relationship-container');
-    var life = document.getElementsByClassName('life-container');
+var rel = $('.relationship-container');
+var life = $('.life-container');
 
-    if(life[0].style.display === "none") {
-        life[0].style.display = "block";
-        rel[0].style.display = "none";
+
+$(".relationship-button").click(function() {
+    rel.slideToggle(300);
+    if(life.is(":visible")) {
+        life.hide();
     }
-    else {
-        life[0].style.display = "none";
+});
+
+$(".life-button").click(function() {
+    life.slideToggle(300);
+    if(rel.is(":visible")) {
+        rel.hide();
     }
-}
+});
+
+});
 
 //Slideshow
 var slideIndex = 1;
@@ -34,12 +31,12 @@ function plusDivs(n) {
 function showDivs(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
+    if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+        x[i].style.display = "none";
     }
-    x[slideIndex-1].style.display = "block"; 
+    x[slideIndex-1].style.display = "block";
 }
 
 setInterval(plusDivs, 3000, 1);

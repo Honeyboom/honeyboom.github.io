@@ -43,12 +43,12 @@ plugins:
 
 # Site menu settings
 menu:
+  - title: "Coaching"
+    url: "/coaching"
   - title: "Free Tools"
     url: "/free-tools"
   - title: "Silvia & Michal"
     url: "/silvia-michal"
-  - title: "Coaching"
-    url: "/coaching"
 
 # Collections settings
 collections:
