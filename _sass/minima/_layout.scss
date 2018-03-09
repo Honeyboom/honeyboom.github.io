@@ -704,6 +704,53 @@
  * Coaching
  */
  
+
+.slider {
+  position: relative;
+  margin: -30px -15px $spacing-unit -15px;
+  
+  .slider-button-left {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+    
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    color: #fff!important;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .slider-button-right {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+    
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff!important;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .slider-button-right:hover, .slider-button-left:hover {
+    background-color: #000!important;
+  }
+}
+ 
  
 .nice-quote {
   text-align: center;
@@ -762,8 +809,9 @@
 
 
 .relationship-container {
-  margin-top: $big-spacing-unit;
+  margin: 40px 10vw 0 10vw;
   text-align: justify;
+  width: 80%;
   
   .rel-top-image {
     margin-bottom: $spacing-unit;
@@ -791,11 +839,15 @@
       margin-left: $small-spacing-unit + 30px;
     }
   }
+  
+  @include-media-query ($on-palm) {
+    margin: 40px 5vw 0 5vw;
+  }
 }
 
 
 .life-container {
-  margin-top: $big-spacing-unit;
+  margin: 40px 10vw 0 10vw;
   text-align: justify;
   
   .life-top-image {
@@ -823,6 +875,10 @@
     ul {
       margin-left: $small-spacing-unit + 30px;
     }
+  }
+  
+  @include-media-query ($on-palm) {
+    margin: 40px 5vw 0 5vw;
   }
 }
 
@@ -897,4 +953,15 @@
 }
 
 
-
+/**
+ * Thank You
+ */
+ 
+.thankyou-container {
+  display: block;
+  text-align: center;
+  
+  p {
+    margin: 60px 0 40px 0;
+  }
+}
