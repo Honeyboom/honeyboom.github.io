@@ -706,7 +706,16 @@
  
  
 .nice-quote {
+  text-align: center;
   margin-bottom: $big-spacing-unit;
+  
+  h2 {
+    color: #ff9c00;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
 } 
  
 .button-container {

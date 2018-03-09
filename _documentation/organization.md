@@ -8,7 +8,7 @@ title: Organization
 
   Honeyboom LLP is a Limited Liability Partnership registered in Scotland (SO306239).
 
-  Write us anytime: [honeyboom.xyz@gmail.com](mailto:honeyboom.xyz@gmail.com)
+  Write us anytime: [hello@honeyboom.xyz](mailto:hello@honeyboom.xyz)
 
   Registered office address: \\
   <b>Honeyboom LLP</b> \\
