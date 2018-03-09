@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Honeyboom
 description: "Honeyboom offers tools and inspiration to help you build vibrant relationships. Silvia and Michal share their journey as they deepen their relationship with each other, their friends and family, themselves, and people they meet as they travel the world."
-email: honeyboom.xyz@gmail.com
+email: hello@honeyboom.xyz
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://honeyboom.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 enforce_ssl: honeyboom.xyz

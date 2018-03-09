@@ -766,9 +766,10 @@
     
     .coaching-prices {
       list-style-type: none;
+      margin-left: $small-spacing-unit;
     }
     
-    h3 {
+    h2, h3 {
       font-weight: bold;
     }
     
@@ -776,14 +777,44 @@
       margin: 0 $small-spacing-unit $small-spacing-unit $small-spacing-unit;
       text-align: justify;
     }
+    
+    ul {
+      margin-left: $small-spacing-unit + 30px;
+    }
   }
-  
-  
 }
+
 
 .life-container {
   margin-top: $big-spacing-unit;
   text-align: justify;
+  
+  .life-top-image {
+    margin-bottom: $spacing-unit;
+    text-align: center;
+  }
+  
+  .life-text-container {
+    font-size: $small-font-size;
+    
+    .coaching-prices {
+      list-style-type: none;
+      margin-left: $small-spacing-unit;
+    }
+    
+    h2, h3 {
+      font-weight: bold;
+    }
+    
+    p {
+      margin: 0 $small-spacing-unit $small-spacing-unit $small-spacing-unit;
+      text-align: justify;
+    }
+    
+    ul {
+      margin-left: $small-spacing-unit + 30px;
+    }
+  }
 }
 
 
@@ -793,11 +824,12 @@
 
 
 
-.container {
+.bottom-container {
   
-  .top-image {
-    display: inline-block;
-    margin-bottom: $spacing-unit;
+  .bottom-image {
+    display: block;
+    margin: $spacing-unit 0;
+    text-align: center;
   }
   
   .text-container {
@@ -807,12 +839,36 @@
     font-size: $small-font-size;
     margin-right: $small-spacing-unit;
     margin-left: $small-spacing-unit;
+    margin-bottom: $small-spacing-unit;
     float: right;
+    
+    h2 {
+      font-weight: bold;
+    }
+    
   }
   
   .side-image {
     display: inline-block;
     width: 35%;
+  }
+  
+  .faq-container {
+    font-size: $small-font-size;
+  
+    h3 {
+      font-weight: bold;
+    }
+    
+    p {
+      text-align: justify;
+      margin: $small-font-size;
+      margin-top: 0;
+    }
+    
+    ul {
+      margin-left: $small-spacing-unit + 30px;
+    }
   }
   
   @include media-query($on-palm) {
@@ -825,6 +881,7 @@
       display: block;
       text-align: center;
       width: auto;
+      max-width: 300px;
     }
     
   }
