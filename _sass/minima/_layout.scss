@@ -34,7 +34,7 @@
   }
 }
 
-.header-logo {
+.header-logo-s {
   display: flex;
   display: -webkit-flex;
   float: left;
@@ -44,7 +44,21 @@
     padding-top: 2px;
     width: auto;
     //height: $base-line-height * $base-font-size * 2;
-    height: 1.7rem;
+    height: $base-line-height * $base-font-size * 1.7;
+  }
+}
+
+.header-logo-l {
+  display: flex;
+  display: -webkit-flex;
+  float: left;
+  height: 3.4rem;
+  align-items: center;
+  img {
+    padding-top: 2px;
+    width: auto;
+    //height: $base-line-height * $base-font-size * 2;
+    height: $base-line-height * $base-font-size * 1.1;
   }
 }
 
@@ -291,8 +305,8 @@
 	li {
 		display: inline-block;
 		margin: 0 5vw 8vh 0;
-		width: calc((80% - 10px - 10vw) / 3);
-		width: -webkit-calc((80% - 10px - 10vw) / 3);
+		width: calc((80% - 10px - 8vw) / 3);
+		width: -webkit-calc((80% - 10px - 8vw) / 3);
 		@include media-query($on-palm) {
 			margin: 0 0 4vh 0;
 			width: 100%;
@@ -673,26 +687,21 @@
  */
 
 .silvia-michal-about {
-  
-  h2 {
+  padding: 0 8vw;
     
-  }
-  
   .sm-main-text {
-    padding: 0 10vw $big-spacing-unit 10vw;
+    padding-bottom: $big-spacing-unit;
     text-align: justify;
 		font-size: $small-font-size;
   }
   
   .sm-main-image {
     text-align: center;
-    margin: $spacing-unit -15px $spacing-unit -15px;
+    margin-bottom: $spacing-unit;
   }
 	
 	@include media-query($on-palm) {
-	  .sm-main-text {
-	    padding: 0 5vw $big-spacing-unit 5vw;
-	  }
+	  padding: 0 5vw $big-spacing-unit 5vw;
 	}
 }
 
@@ -702,7 +711,7 @@
   display: -webkit-flex;
   flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
-  padding: 0 10vw $big-spacing-unit 10vw;
+  padding: 0 8vw $big-spacing-unit 8vw;
   
   .profile-text-container {
     margin-left: 2.5%;
@@ -838,13 +847,13 @@
 
 .relationship-container {
   display: none;
-  padding: $big-spacing-unit 10vw;
+  padding: $big-spacing-unit 8vw;
   text-align: justify;
   
   .rel-top-image {
     margin-bottom: $spacing-unit;
-    margin-left: -webkit-calc(-15px - 10vw) !important;
-    margin-right: -webkit-calc(-15px - 10vw) !important;
+    margin-left: -webkit-calc(-15px - 8vw) !important;
+    margin-right: -webkit-calc(-15px - 8vw) !important;
     text-align: center;
   }
   
@@ -886,14 +895,14 @@
 
 .life-container {
   display: none;
-  padding: $big-spacing-unit 10vw;
+  padding: $big-spacing-unit 8vw;
   text-align: justify;
   
   .life-top-image {
     margin-bottom: $spacing-unit;
     text-align: center;
-    margin-left: -webkit-calc(-15px - 10vw) !important;
-    margin-right: -webkit-calc(-15px - 10vw) !important;
+    margin-left: -webkit-calc(-15px - 8vw) !important;
+    margin-right: -webkit-calc(-15px - 8vw) !important;
   }
   
   .life-text-container {
@@ -939,7 +948,7 @@
 
 
 .bottom-container {
-   margin: 40px 10vw 0 10vw;
+   margin: 40px 8vw 0 8vw;
   
   
   .ebook {
@@ -988,7 +997,7 @@
   
   .faq-image {
     display: block;
-    margin: $spacing-unit -webkit-calc(-15px - 10vw);
+    margin: $spacing-unit -webkit-calc(-15px - 8vw);
     text-align: center;
   }
   
