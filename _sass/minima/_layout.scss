@@ -506,13 +506,12 @@
 }
 
 .post-thumb {
-  width: auto;
-  height: auto;
-  max-width: 360px;
-  min-width: 360px;
+  min-width: 45%;
   margin-right: $spacing-unit;
   margin-bottom: $spacing-unit;
+  
   @include media-query($on-palm) {
+    align-self: center;
     margin-right: 0px;
     margin-bottom: $small-spacing-unit;
     min-width: 160px;
