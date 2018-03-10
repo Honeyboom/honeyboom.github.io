@@ -2,10 +2,14 @@
   <div class="wrapper">
 		<div class="header-logo">
 		  <a href="{{ '/' | relative_url }}">
-			  <img src="/assets/images/logo/logo-small.png" alt="Honeyboom Logo">
+        {% if page.url == "/" %}
+          <img src="/assets/images/logo/title-honeyboom.jpg" alt="Honeyboom Logo">
+        {% else %}
+          <img src="/assets/images/logo/logo-small.png" alt="Honeyboom Logo">
+        {% endif %}
 			</a>
 		</div>
-  	<a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+  	<!-- <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a> -->
       <!-- Icon de menu mobile -->
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />

@@ -35,10 +35,15 @@
 }
 
 .header-logo {
-  display: inline-block;
+  display: flex;
   float: left;
+  height: 3.4rem;
+  align-items: center;
   img {
-    height: $base-line-height * $base-font-size * 2.25;
+    padding-top: 2px;
+    width: auto;
+    //height: $base-line-height * $base-font-size * 2;
+    height: 1.7rem;
   }
 }
 
@@ -248,9 +253,20 @@
  * Homepage
  */
 
-.subscribe-button {
-  text-align: center;
+
+.brand-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 40px 0;
+  
+  img {
+    width: 50%;
+    display: block;
+    max-height: 100%;
+  }
 }
+
 
 .home-video {
   padding-bottom: 46.25% !important;
