@@ -305,8 +305,8 @@
 	li {
 		display: inline-block;
 		margin: 0 5vw 8vh 0;
-		width: calc((80% - 10px - 8vw) / 3);
-		width: -webkit-calc((80% - 10px - 8vw) / 3);
+		width: calc((80% - 10px - 10vw) / 3);
+		width: -webkit-calc((80% - 10px - 10vw) / 3);
 		@include media-query($on-palm) {
 			margin: 0 0 4vh 0;
 			width: 100%;
@@ -688,6 +688,10 @@
 
 .silvia-michal-about {
   padding: 0 8vw;
+  
+  h2 {
+    margin-bottom: $spacing-unit;
+  }
     
   .sm-main-text {
     padding-bottom: $big-spacing-unit;
@@ -698,6 +702,8 @@
   .sm-main-image {
     text-align: center;
     margin-bottom: $spacing-unit;
+    margin-left:-webkit-calc(-15px - 8vw);
+    margin-right:-webkit-calc(-15px - 8vw);
   }
 	
 	@include media-query($on-palm) {
