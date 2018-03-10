@@ -651,54 +651,70 @@
  */
 
 .silvia-michal-about {
-	margin-bottom: $big-spacing-unit;
-	p {
-		text-align: justify;
+  
+  h2 {
+    
+  }
+  
+  .sm-main-text {
+    padding: 0 10vw $big-spacing-unit 10vw;
+    text-align: justify;
 		font-size: $small-font-size;
+  }
+  
+  .sm-main-image {
+    text-align: center;
+    margin: $spacing-unit -15px $spacing-unit -15px;
+  }
+	
+	@include media-query($on-palm) {
+	  .sm-main-text {
+	    padding: 0 5vw $big-spacing-unit 5vw;
+	  }
 	}
 }
 
-.sm-main-image {
-  text-align: center;
-  margin: $spacing-unit 0 $spacing-unit 0;
-}
 
 .profile-container {
   display: flex;
   display: -webkit-flex;
   flex-flow: row nowrap;
   -webkit-flex-flow: row nowrap;
-  margin-bottom: $big-spacing-unit;
+  padding: 0 10vw $big-spacing-unit 10vw;
+  
+  .profile-text-container {
+    margin-left: 2.5%;
+    text-align: justify;
+	  font-size: $small-font-size;
+  	color: $text-color;      
+  }
   
   @include media-query($on-palm) {
     flex-flow: column nowrap;
-    -webkit-flex-flow: row nowrap;
+    -webkit-flex-flow: column nowrap;
+    padding: 0 5vw $big-spacing-unit 5vw;
+    
+    .profile-text-container {
+      h2 {
+        text-align: center;
+      }
+      margin-left: 0px;
+      margin-bottom: $small-spacing-unit;
+    }
   }
 }
 
-.profile-text-container {
-  p {
-    text-align: justify;
-		font-size: $small-font-size;
-  	color: $text-color;
-  }
-  @include media-query($on-palm) {
-    margin-left: 0px;
-    margin-bottom: $small-spacing-unit;
-  }
-}
 
 .profile-pic {
-  width: auto;
-  height: auto;
-  max-width: 360px;
-  min-width: 360px;
-  margin-right: $spacing-unit;
+  min-width: 40%;
+  align-self: top;
   margin-bottom: $spacing-unit;
+  
   @include media-query($on-palm) {
     margin-right: 0px;
     margin-bottom: $small-spacing-unit;
     min-width: 160px;
+    align-self: center;
   }
 }
 
@@ -724,10 +740,7 @@
   margin: -30px -15px $spacing-unit -15px;
   cursor: pointer;
 }
- 
- 
- 
- 
+
  
 .nice-quote {
   text-align: center;
@@ -1011,13 +1024,4 @@
     margin: 60px 0 40px 0;
   }
 }
-
-
-
-
-.jssorb051 .i {position:absolute;cursor:pointer;}
-        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
-        .jssorb051 .i:hover .b {fill-opacity:.7;}
-        .jssorb051 .iav .b {fill-opacity: 1;}
-        .jssorb051 .i.idn {opacity:.3;}
 
