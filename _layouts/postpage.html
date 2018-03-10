@@ -3,7 +3,7 @@ layout: default
 ---
 <!-- content can be inserted in freestuff.md -->
 
-{{ content }} 
+{{ content }}
 
 
 <!-- Order all posts by date -->
@@ -17,7 +17,7 @@ layout: default
           {% assign alltags = alltags | append: " " | append: tag %}
        {% endfor %}
        <li class="{{ alltags }}" data-posttime="{{ post.date | date_to_xmlschema }}">
-	<div class="post-container">     
+	<div class="post-container">
 	{% if post.image %}
 	  <div class="post-thumb">
           {% if post.link %}
@@ -55,8 +55,8 @@ layout: default
 
   <p class="rss-subscribe">Subscribe via <a href="/feed.xml"><img src="/assets/images/social/icon-rss.png" width="24" height="24"></a></p>
 
-  <div id="back-to-top">
-    <a href="#"><p class="arrow"></p></a>
+  <div class="back-to-top">
+    <p class="arrow"></p>
   </div>
 </div>
 

@@ -3,7 +3,7 @@ function timeBarrier() {
 	document.getElementsByClassName('all-posts')[0].style.display = 'none';
 	document.querySelectorAll('[data-posttime]').forEach(function(e) {
 		var post_time = new Date(e.dataset.posttime);
-		
+
 		if(post_time > now) {
 			if(e.type === 'article') {
 				window.location.href = '/404.html';
@@ -14,3 +14,11 @@ function timeBarrier() {
 	});
 	document.getElementsByClassName('all-posts')[0].style.display = 'block';
 }
+
+$(document).ready(function(){
+
+	$(".back-to-top").click(function() {
+	  $("html, body").animate({ scrollTop: 0 }, "slow");
+	});
+
+});
