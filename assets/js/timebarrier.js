@@ -1,6 +1,6 @@
 function timeBarrier() {
 	var now = new Date();
-	document.getElementsByClassName('all-posts')[0].style.display = 'none';
+	$(".all-posts").hide();
 	document.querySelectorAll('[data-posttime]').forEach(function(e) {
 		var post_time = new Date(e.dataset.posttime);
 
@@ -12,7 +12,8 @@ function timeBarrier() {
 			}
 		}
 	});
-	document.getElementsByClassName('all-posts')[0].style.display = 'block';
+	$(".loading-icon").hide();
+	$(".all-posts").show();
 }
 
 $(document).ready(function(){

@@ -36,6 +36,7 @@
 
 .header-logo {
   display: flex;
+  display: -webkit-flex;
   float: left;
   height: 3.4rem;
   align-items: center;
@@ -258,6 +259,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  display: -webkit-flex;
   padding: 40px 0;
   
   img {
@@ -462,6 +464,11 @@
 /**
  * Post Page
  */
+ 
+.loading-icon {
+  display: flex;
+  justify-content: center;
+}
  
 .all-posts {
   display: none;
