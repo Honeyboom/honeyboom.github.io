@@ -1,21 +1,31 @@
 $(document).ready(function(){
-
+    // Detects if the browser is Chrome
+    var isChrome = !!window.chrome && !!window.chrome.webstore;
     var rel = $('.relationship-container');
     var life = $('.life-container');
 
 
-    $(".relationship-button").click(function() {
-        rel.slideToggle(500);
+    $(".relationship-button").click(function(e) {
+        e.preventDefault();
         if(life.is(":visible")) {
             life.hide();
         }
+        rel.slideToggle(500);
     });
 
-    $(".life-button").click(function() {
-        life.slideToggle(500);
+    $(".life-button").click(function(e) {
+        e.preventDefault();
         if(rel.is(":visible")) {
             rel.hide();
         }
+        life.slideToggle(500);
+
+        if(!isChrome) {
+            $('html, body').animate({
+            scrollTop: $(".life-button").offset().top
+            }, 0);
+        }
+
     });
 
     $(".back-to-top").click(function() {
