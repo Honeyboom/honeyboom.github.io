@@ -20,11 +20,13 @@ $(document).ready(function(){
         }
         life.slideToggle(500);
 
-        if(!isChrome) {
+        if(isChrome) {
             $('html, body').animate({
-            scrollTop: $(".life-button").offset().top
-            }, 0);
+            scrollTop: $(".life-button").offset().top - 20
+            }, 200);
         }
+
+
 
     });
 
