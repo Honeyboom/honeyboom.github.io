@@ -712,6 +712,12 @@
 	
 	@include media-query($on-palm) {
 	  padding: 0 5vw $big-spacing-unit 5vw;
+	  
+	  .sm-main-image {
+	    margin-top: -30px;
+	    margin-left: calc(-15px - 5vw);
+      margin-right: calc(-15px - 5vw);
+	  }
 	}
 }
 
