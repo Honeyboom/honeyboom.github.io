@@ -182,10 +182,10 @@
 
 .site-footer p {
   text-align: center;
+  @include relative-font-size(0.8)
 }
 
 .site-map a {
-  font-size: $small-font-size;
   color: $text-color;
 }
 
@@ -219,15 +219,12 @@
 
 .footer-col-wrapper > ul > li {
   display: table-cell;
+  padding-left: $big-spacing-unit;
+  margin-left: 0;
 }
 
 .footer-col-wrapper > ul > li:first-child {
   padding-left: 0;
-}
-
-.footer-col-wrapper > ul > li {
-  padding-left: $big-spacing-unit;
-  margin-left: 0;
 }
 
 .footer-col-wrapper > ul > li ul li {
@@ -260,6 +257,13 @@
   }
   .email-palm {
     display: unset;
+  }
+  
+  .footer-col-wrapper > ul > li {
+    padding-left: $small-spacing-unit;
+    ul li {
+      @include relative-font-size(0.8);
+    }
   }
 }
 
@@ -702,8 +706,8 @@
   .sm-main-image {
     text-align: center;
     margin-bottom: $spacing-unit;
-    margin-left:-webkit-calc(-15px - 8vw);
-    margin-right:-webkit-calc(-15px - 8vw);
+    margin-left: calc(-15px - 8vw);
+    margin-right: calc(-15px - 8vw);
   }
 	
 	@include media-query($on-palm) {
@@ -858,8 +862,8 @@
   
   .rel-top-image {
     margin-bottom: $spacing-unit;
-    margin-left: -webkit-calc(-15px - 8vw) !important;
-    margin-right: -webkit-calc(-15px - 8vw) !important;
+    margin-left: calc(-15px - 8vw) !important;
+    margin-right: calc(-15px - 8vw) !important;
     text-align: center;
   }
   
@@ -892,8 +896,8 @@
     order: 2;
     
     .rel-top-image {
-      margin-left: -webkit-calc(-15px - 5vw) !important;
-      margin-right: -webkit-calc(-15px - 5vw) !important;
+      margin-left: calc(-15px - 5vw) !important;
+      margin-right: calc(-15px - 5vw) !important;
     }
   }
 }
@@ -907,8 +911,8 @@
   .life-top-image {
     margin-bottom: $spacing-unit;
     text-align: center;
-    margin-left: -webkit-calc(-15px - 8vw) !important;
-    margin-right: -webkit-calc(-15px - 8vw) !important;
+    margin-left: calc(-15px - 8vw) !important;
+    margin-right: calc(-15px - 8vw) !important;
   }
   
   .life-text-container {
@@ -940,8 +944,8 @@
     order: 4;
     
     .life-top-image {
-      margin-left: -webkit-calc(-15px - 5vw) !important;
-      margin-right: -webkit-calc(-15px - 5vw) !important;
+      margin-left: calc(-15px - 5vw) !important;
+      margin-right: calc(-15px - 5vw) !important;
     }
   }
 }
@@ -1003,7 +1007,7 @@
   
   .faq-image {
     display: block;
-    margin: $spacing-unit -webkit-calc(-15px - 8vw);
+    margin: $spacing-unit calc(-15px - 8vw);
     text-align: center;
   }
   
@@ -1043,7 +1047,7 @@
     }
     
     .faq-image {
-      margin: $spacing-unit -webkit-calc(-15px - 5vw);
+      margin: $spacing-unit calc(-15px - 5vw);
     }
     
   }
