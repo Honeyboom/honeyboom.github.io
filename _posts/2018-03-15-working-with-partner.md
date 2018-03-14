@@ -3,7 +3,7 @@ layout: post
 title: Pros and Cons of WORKING with your BOYFRIEND / GIRLFRIEND | Love + Business
 date: 2018-03-15 14:05:00 +0000
 tags: video do-it-yourself digital-nomad-couple romantic
-image: /assets/images/posts/thumbnails/working-with-partner.jpg
+image: /assets/images/posts/thumbnails/working-with-your-partner.jpg
 author: Honeyboom
 
 ---

@@ -3,7 +3,7 @@ layout: post
 title: 8 TIPS to keep a LONG and STRONG relationship | Relationship Work
 date: 2018-03-29 14:05:00 +0000
 tags: video do-it-yourself romantic digital-nomad-couple
-image: /assets/images/posts/thumbnails/working-with-your-partner.jpg
+image: /assets/images/posts/thumbnails/working-on-relationship.jpg
 author: Honeyboom
 
 ---
