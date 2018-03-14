@@ -2,7 +2,7 @@
 layout: post
 title:     Digital Nomad COUPLE - Travel Tips || Money, Working Together, Traveling Slow
 date:   2018-02-08 20:00:00 +0000
-tags: video do-it-yourself travel romantic
+tags: video do-it-yourself travel romantic digital-nomad-couple
 image: /assets/images/posts/thumbnails/digital-nomad-couple-thumb.jpg
 author: Honeyboom
 
