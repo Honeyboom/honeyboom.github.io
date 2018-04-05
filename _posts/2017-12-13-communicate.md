@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Communicate.
+title: "Communicate."
 date: 2017-12-13 20:00:01 +0000
 categories: misc
 tags: link do-it-yourself family-and-friends romantic

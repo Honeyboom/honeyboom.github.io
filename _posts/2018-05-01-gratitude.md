@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The power of gratitude - an experiment (LIVE DEMO) || Negativity vs. gratitude || Law of attraction
+title: "The power of gratitude - an experiment (LIVE DEMO) || Negativity vs. gratitude || Law of attraction"
 date: 2018-05-01 14:05:00 +0000
 tags: video do-it-yourself romantic family-and-friends
 image: /assets/images/posts/thumbnails/gratitude.jpg

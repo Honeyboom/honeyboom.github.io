@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Relationship Hacks - Coziness, Closeness, and Creativity | Couples Activities
+title: "Relationship Hacks - Coziness, Closeness, and Creativity | Couples Activities"
 date: 2018-03-13 14:05:00 +0000
 tags: video do-it-yourself romantic family-and-friends misc
 image: /assets/images/posts/thumbnails/bedtime-stories.jpg

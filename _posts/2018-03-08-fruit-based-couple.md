@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fruit Based Couple | How Food Affects our Relationship | Plant-based | Polyamorous Couple
+title: "Fruit Based Couple | How Food Affects our Relationship | Plant-based | Polyamorous Couple"
 date: 2018-03-08 13:05:00 +0000
 tags: video romantic
 image: /assets/images/posts/thumbnails/fruit-based-thumb.jpg

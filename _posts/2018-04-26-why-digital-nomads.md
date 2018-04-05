@@ -1,9 +1,9 @@
 ---
 layout: post
-title: We don’t have a home? || Our traveling lifestyle || Digital Nomad Couple
+title: "We don’t have a home? || Our traveling lifestyle || Digital Nomad Couple"
 date: 2018-04-26 14:05:00 +0000
 tags: video digital-nomad-couple travel
-image: /assets/images/posts/thumbnails/why-digital-nomads.jpg
+image: /assets/images/posts/thumbnails/why-digi-nomads.jpg
 author: Honeyboom
 
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How we use EYE GAZING to make our RELATIONSHIP more magic | Relationship Hacks
+title: "How we use EYE GAZING to make our RELATIONSHIP more magic | Relationship Hacks"
 date: 2018-03-20 14:05:00 +0000
 tags: video do-it-yourself romantic family-and-friends
 image: /assets/images/posts/thumbnails/eye-gazing.jpg

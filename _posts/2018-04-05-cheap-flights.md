@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to find SUPER CHEAP FLIGHTS | Best booking sites and hacks | Digital Nomad Couple
+title: "How to find SUPER CHEAP FLIGHTS | Best booking sites and hacks | Digital Nomad Couple"
 date: 2018-04-05 14:05:00 +0000
 tags: video do-it-yourself travel digital-nomad-couple
 image: /assets/images/posts/thumbnails/cheap-flights.jpg

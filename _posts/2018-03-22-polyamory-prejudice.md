@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Telling others that we’re polyamorous | Prejudice and judgement - How do we cope?
+title: "Telling others that we’re polyamorous | Prejudice and judgement - How do we cope?"
 date: 2018-03-22 14:05:00 +0000
 tags: video misc romantic family-and-friends polyamory
 image: /assets/images/posts/thumbnails/polyamory-prejudice.jpg

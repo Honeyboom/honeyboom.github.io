@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dancing Hands || Heart-to-Heart Game Series || Relaxation, Connection, Focus
+title: "Dancing Hands || Heart-to-Heart Game Series || Relaxation, Connection, Focus"
 date: 2018-02-13 20:00:00 +0000
 tags: video do-it-yourself romantic family-and-friends
 image: /assets/images/posts/thumbnails/dancing-hands-thumb.jpg

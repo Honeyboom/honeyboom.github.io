@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frequency Game: Connecting through SOUND || Authentic Relating Games
+title: "Frequency Game: Connecting through SOUND || Authentic Relating Games"
 date: 2018-04-10 14:05:00 +0000
 tags: video do-it-yourself family-and-friends romantic
 image: /assets/images/posts/thumbnails/sound-game.jpg

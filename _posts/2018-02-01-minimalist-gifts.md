@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 4 Amazing Minimalist Gift Ideas - Free, DIY || Birthday, Christmas, Valentine’s
+title: "4 Amazing Minimalist Gift Ideas - Free, DIY || Birthday, Christmas, Valentine’s"
 date: 2018-02-01 20:00:00 +0000
 tags: video do-it-yourself misc
 image: /assets/images/posts/thumbnails/minimalist-gift-thumb.jpg

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chicken Pilots || Heart-to-Heart Game Series || Fun, Energy, Ridiculous amount of laughter
+title: "Chicken Pilots || Heart-to-Heart Game Series || Fun, Energy, Ridiculous amount of laughter"
 date: 2018-02-27 13:05:00 +0000
 tags: video do-it-yourself family-and-friends
 image: /assets/images/posts/thumbnails/chicken-pilots-thumb.jpg

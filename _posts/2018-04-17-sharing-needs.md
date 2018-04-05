@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supporting each other: NEEDS and solutions  | LIVE DEMO | Nonviolent Communication
+title: "Supporting each other: NEEDS and solutions  | LIVE DEMO | Nonviolent Communication"
 date: 2018-04-17 14:05:00 +0000
 tags: video do-it-yourself romantic family-and-friends
 image: /assets/images/posts/thumbnails/needs.jpg

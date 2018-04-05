@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Have More Fun in Your Relationship? || Play, Laugh, Love
+title: "How to Have More Fun in Your Relationship? || Play, Laugh, Love"
 date: 2018-01-26 19:31:08 +0000
 tags: video do-it-yourself romantic
 image: /assets/images/posts/thumbnails/how-to-have-fun-thumb.jpg
