@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Our morning routine as a digital nomad couple. Activities, self-time and challenges.
-date:   2018-01-11 19:20:01 +0000
+title: Our morning routine as a digital nomad couple. Activities, self-time and challenges.
+date: 2018-01-11 19:20:01 +0000
 tags: video do-it-yourself romantic family-and-friends
 image: /assets/images/posts/thumbnails/solving-conflict-in-relationships-thumb.jpg
 author: Honeyboom

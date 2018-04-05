@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Push Hands || Heart-to-Heart Game Series || Balance, Flow, Connection
-date:   2018-02-20 20:00:00 +0000
+title: Push Hands || Heart-to-Heart Game Series || Balance, Flow, Connection
+date: 2018-02-20 20:00:00 +0000
 tags: video do-it-yourself romantic family-and-friends
 image: /assets/images/posts/thumbnails/push-hands.jpg
 author: Honeyboom

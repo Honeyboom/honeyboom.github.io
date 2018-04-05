@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  5 SECRETS to Make Your LONG DISTANCE RELATIONSHIP Amazing
+title: 5 SECRETS to Make Your LONG DISTANCE RELATIONSHIP Amazing
 date: 2018-02-22 13:05:00 +0000
 tags: video do-it-yourself romantic travel
 image: /assets/images/posts/thumbnails/long-distance-relationships-thumb.jpg

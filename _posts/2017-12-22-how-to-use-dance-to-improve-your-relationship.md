@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  How to Use Dance to Improve Your Relationship
-date:   2017-12-22 18:38:08 +0000
+title: How to Use Dance to Improve Your Relationship
+date: 2017-12-22 18:38:08 +0000
 tags: video do-it-yourself romantic family-and-friends
 image: /assets/images/posts/thumbnails/30-day-dance-web-thumb.png
 author: Honeyboom

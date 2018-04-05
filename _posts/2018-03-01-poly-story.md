@@ -2,7 +2,7 @@
 layout: post
 title: Polyamory - Our Story || From Monogamy to Open Relationship || Millenial Relationships
 date: 2018-03-01 13:05:00 +0000
-tags: video do-it-yourself romantic
+tags: video romantic polyamory
 image: /assets/images/posts/thumbnails/poly-story-thumbnail.jpg
 author: Honeyboom
 

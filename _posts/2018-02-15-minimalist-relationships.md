@@ -2,7 +2,7 @@
 layout: post
 title: Minimalist Relationships || Declutter Your Friendships and Love Life || Simplify Love
 date: 2018-02-15 20:00:00 +0000
-tags: video do-it-yourself misc romantic family-and-friends
+tags: video misc romantic family-and-friends
 image: /assets/images/posts/thumbnails/minimalist-relationships.jpg
 author: Honeyboom
 
