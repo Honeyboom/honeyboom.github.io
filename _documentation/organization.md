@@ -19,49 +19,17 @@ title: Organization
 
 &nbsp;
 
-## Credits {#credits}
-
-Built on [Jekyll](https://jekyllrb.com/), by @danielbbastos, hosted on [Github](https://github.com/), using [Minima](https://github.com/jekyll/minima) theme.
+## Terms and Conditions {#tc}
+New terms
 
 &nbsp;
 
-
-## Privacy Policy {#pp}
+## Privacy Policy & Cookies {#privacy}
 
 We collect anonymous usage statistics, but we do not hold any customer data at all – it is only held by our payment and analytics partners (Google, Facebook, PayPal).
-
-&nbsp;
-
-
-## Cookies {#cookies}
-
 We use cookies. They improve your user experience. If you don’t like them, feel free to block them or delete them. The website will still work just fine.
 
 &nbsp;
-
-
-## Accountability for content {#acc-content}
-
-We create our content with much love and care. Nonetheless it is simply our opinion based on what works for us and what does not. We are not psychologists, psychotherapists, nor do we have any coaching or other health related official qualifications.
-
-You are responsible for your own decisions and for any consequences of whatever use you make of the information contained in this website.
-
-&nbsp;
-
-
-## Accountability for links {#acc-links}
-
-Responsibility for the external links (to websites of third parties) lies solely with the operators of the linked pages. We have no control over the content or availability of those sites. No violations were evident to us at the time of linking.
-
-&nbsp;
-
-
-## Comments {#comments}
-
-You are solely responsible for any comment you leave on this website. By commenting you grant Honeyboom LLP the unlimited right and license to use, copy, display, save, reproduce, distribute, or publish your content free of charge.
-
-&nbsp;
-
 
 ## Uncopyright {#uncopyright}
 
@@ -84,6 +52,36 @@ This is also a juicy personal challenge for us. In conversation about this topic
 Despite our content being uncopyrighted, we just want to add that our products are our main source of income, and therefore we would be really grateful if you could pay for them when you get them (some of them are even donation based, so you can get them for free or name your own price).
 
 We want to keep Honeyboom.xyz free of advertising, and we want to keep developing great products that bring value to your life, and it is your support which allows us to do that everyday.
+
+&nbsp;
+
+## Credits {#credits}
+
+Built on [Jekyll](https://jekyllrb.com/), by @danielbbastos, hosted on [Github](https://github.com/), using [Minima](https://github.com/jekyll/minima) theme.
+
+&nbsp;
+
+## Accountability for content {#acc-content}
+
+We create our content with much love and care. Nonetheless it is simply our opinion based on what works for us and what does not. We are not psychologists, psychotherapists, nor do we have any coaching or other health related official qualifications.
+
+You are responsible for your own decisions and for any consequences of whatever use you make of the information contained in this website.
+
+&nbsp;
+
+
+## Accountability for links {#acc-links}
+
+Responsibility for the external links (to websites of third parties) lies solely with the operators of the linked pages. We have no control over the content or availability of those sites. No violations were evident to us at the time of linking.
+
+&nbsp;
+
+
+## Comments {#comments}
+
+You are solely responsible for any comment you leave on this website. By commenting you grant Honeyboom LLP the unlimited right and license to use, copy, display, save, reproduce, distribute, or publish your content free of charge.
+
+&nbsp;
 
 Enjoy your stay and have fun! \\
 Vibrant Love, \\
