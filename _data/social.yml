@@ -1,6 +1,6 @@
 silvia:
   - name: medium
-    username: @silviabastos6
+    username: silviabastos6
   - name: instagram
     username: lovesquares
   - name: twitter
@@ -10,7 +10,7 @@ silvia:
 
 michal:
   - name: medium
-    username: @michal.korzonek
+    username: michal.korzonek
   - name: instagram
     username: formatguy
   - name: twitter
