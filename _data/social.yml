@@ -1,11 +1,16 @@
 silvia:
+  - name: medium
+    username: @silviabastos6
   - name: instagram
     username: lovesquares
   - name: twitter
     username: helloiams
 
 
+
 michal:
+  - name: medium
+    username: @michal.korzonek
   - name: instagram
     username: formatguy
   - name: twitter
