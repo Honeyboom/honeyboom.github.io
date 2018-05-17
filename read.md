@@ -1,6 +1,6 @@
 ---
-layout: postpage
-title: Free Tools
+layout: readpage
+title: Read
 ---
 
 {% include sorting-table.html %}

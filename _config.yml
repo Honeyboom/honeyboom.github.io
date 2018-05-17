@@ -45,8 +45,10 @@ plugins:
 menu:
   - title: "Coaching"
     url: "/coaching"
-  - title: "Free Tools"
-    url: "/free-tools"
+  - title: "Watch"
+    url: "/watch"
+  - title: "Read"
+    url: "/read"
   - title: "Silvia & Michal"
     url: "/silvia-michal"
 

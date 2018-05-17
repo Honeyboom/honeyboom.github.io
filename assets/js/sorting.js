@@ -36,7 +36,7 @@ function setActiveTag(tag) {
     	item.classList.add('active');
 		}
   }
-	
+
  	//displays a message on sorting table of tags being used
   if(tagsArray.length === 1){
 		var text = "Showing posts containing the tag <b>" + tagsArray[0] + "</b>.";
@@ -45,14 +45,14 @@ function setActiveTag(tag) {
 		var text = "Showing posts containing the tags ";
 		for(i=0; i < tagsArray.length; i++){
 			if(i + 1 === tagsArray.length) {
-				text += " and <b>" + tagsArray[i] + "</b>.";			
+				text += " and <b>" + tagsArray[i] + "</b>.";
 			}
 			else if(i === 0){
-				text += "<b>" + tagsArray[i] + "</b>";			
+				text += "<b>" + tagsArray[i] + "</b>";
 			}
 			else {
 				text += ", <b>" + tagsArray[i] + "</b>";
-			}	
+			}
 		}
 	}
 	var elem = document.getElementsByClassName('selected-tags-text');
@@ -72,7 +72,7 @@ function showContainer() {
   }
 
   // remove the hidden class from all the tags selected on the table
-	if(tagsArray.length > 0) {	
+	if(tagsArray.length > 0) {
     var list = document.getElementsByClassName(tagsArray.join(" ").toString());
     for(i = 0; i < list.length; i++) {
       list[i].classList.remove('hidden');;
@@ -96,7 +96,7 @@ function order(type) {
 	//update sorting info
   var tag = document.getElementsByClassName('selected-tags-text');
   tag[0].innerHTML = "Showing <b>all</b> posts ordered by date.";
-	
+
 	//shows all posts in chronological order
   if(type === "chrono-date") {
 		document.getElementById('all-posts').classList.add('active');
@@ -105,9 +105,9 @@ function order(type) {
       lists[i].classList.remove('hidden');
     }
   }
-		
+
 	tagsArray = [];
-	sessionStorage.setItem("tagsArray", JSON.stringify(tagsArray));	
+	sessionStorage.setItem("tagsArray", JSON.stringify(tagsArray));
 }
 
 
@@ -122,7 +122,7 @@ function updateTags() {
 		var item = document.getElementById(tag + '-item');
 		item.classList.add('active');
 	}
-	
+
 	//displays a message on sorting table of tags being used
   if(tagsArray.length === 1){
 		var text = "Showing posts containing the tag <b>" + tagsArray[0] + "</b>.";
@@ -131,19 +131,19 @@ function updateTags() {
 		var text = "Showing posts containing the tags ";
 		for(i=0; i < tagsArray.length; i++){
 			if(i + 1 === tagsArray.length) {
-				text += " and <b>" + tagsArray[i] + "</b>.";			
+				text += " and <b>" + tagsArray[i] + "</b>.";
 			}
 			else if(i === 0){
-				text += "<b>" + tagsArray[i] + "</b>";			
+				text += "<b>" + tagsArray[i] + "</b>";
 			}
 			else {
 				text += ", <b>" + tagsArray[i] + "</b>";
-			}	
+			}
 		}
 	}
 	var elem = document.getElementsByClassName('selected-tags-text');
   elem[0].innerHTML = text;
-  
+
   //hides all and displays only posts with selected tags
   showContainer();
 }
@@ -154,7 +154,7 @@ function updateTags() {
 
 
 //removes the hash from the url
-function removeHash () { 
+function removeHash () {
 	history.pushState("", document.title, window.location.pathname + window.location.search);
 }
 
@@ -162,13 +162,13 @@ function removeHash () {
 
 
 window.onload = function () {
-  if(window.location.href.indexOf("free-tools") > -1) {
+  if(window.location.href.indexOf("watch") > -1 || window.location.href.indexOf("read") > -1) {
     timeBarrier();
   }
-  
+
   if(window.location.hash) {
   	tagsArray = [];
-		sessionStorage.setItem("tagsArray", JSON.stringify(tagsArray));	
+		sessionStorage.setItem("tagsArray", JSON.stringify(tagsArray));
     var tag = window.location.hash.split('#')[1];
     var sortTable = document.getElementsByClassName('selected-tags-text');
     sortTable[0].setAttribute('id', tag);
@@ -176,7 +176,7 @@ window.onload = function () {
     document.location="#"+tag;
     removeHash();
   }
-  else if(window.location.pathname === "/free-tools/") {
+  else if(window.location.pathname === "/read/" || window.location.pathname === "/watch/") {
   //to show pags previously selected and stored
     updateTags();
   }
