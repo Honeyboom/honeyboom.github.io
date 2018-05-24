@@ -20,14 +20,36 @@ title: Organization
 &nbsp;
 
 ## Terms and Conditions {#tc}
-New terms
+
+## Accountability for content {#acc-content}
+
+We create our content with much love and care. Nonetheless it is simply our opinion based on what works for us and what does not. We are not psychologists, psychotherapists, nor do we have any coaching or other health related official qualifications.
+
+You are responsible for your own decisions and for any consequences of whatever use you make of the information contained in this website.
 
 &nbsp;
 
-## Privacy Policy & Cookies {#privacy}
+## Accountability for links {#acc-links}
 
-We collect anonymous usage statistics, but we do not hold any customer data at all – it is only held by our payment and analytics partners (Google, Facebook, PayPal).
-We use cookies. They improve your user experience. If you don’t like them, feel free to block them or delete them. The website will still work just fine.
+Responsibility for the external links (to websites of third parties) lies solely with the operators of the linked pages. We have no control over the content or availability of those sites. No violations were evident to us at the time of linking.
+
+&nbsp;
+
+## Comments {#comments}
+
+You are solely responsible for any comment you leave on this website. By commenting you grant Honeyboom LLP the unlimited right and license to use, copy, display, save, reproduce, distribute, or publish your content free of charge.
+
+&nbsp;
+
+## Privacy Policy {#privacy}
+
+Review our [Privacy Policy](https://www.iubenda.com/privacy-policy/11652594).
+
+&nbsp;
+
+## Cookies Policy {#cookies}
+
+Review our [Cookies Policy](https://www.iubenda.com/privacy-policy/11652594/cookie-policy).
 
 &nbsp;
 
@@ -61,27 +83,7 @@ Built on [Jekyll](https://jekyllrb.com/), by @danielbbastos, hosted on [Github](
 
 &nbsp;
 
-## Accountability for content {#acc-content}
 
-We create our content with much love and care. Nonetheless it is simply our opinion based on what works for us and what does not. We are not psychologists, psychotherapists, nor do we have any coaching or other health related official qualifications.
-
-You are responsible for your own decisions and for any consequences of whatever use you make of the information contained in this website.
-
-&nbsp;
-
-
-## Accountability for links {#acc-links}
-
-Responsibility for the external links (to websites of third parties) lies solely with the operators of the linked pages. We have no control over the content or availability of those sites. No violations were evident to us at the time of linking.
-
-&nbsp;
-
-
-## Comments {#comments}
-
-You are solely responsible for any comment you leave on this website. By commenting you grant Honeyboom LLP the unlimited right and license to use, copy, display, save, reproduce, distribute, or publish your content free of charge.
-
-&nbsp;
 
 Enjoy your stay and have fun! \\
 Vibrant Love, \\
