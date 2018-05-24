@@ -21,22 +21,22 @@ title: Organization
 
 ## Terms and Conditions {#tc}
 
-## Accountability for content {#acc-content}
-
+<b>Accountability for content</b>
+&nbsp;
 We create our content with much love and care. Nonetheless it is simply our opinion based on what works for us and what does not. We are not psychologists, psychotherapists, nor do we have any coaching or other health related official qualifications.
 
 You are responsible for your own decisions and for any consequences of whatever use you make of the information contained in this website.
 
 &nbsp;
 
-## Accountability for links {#acc-links}
-
+<b>Accountability for links</b>
+&nbsp;
 Responsibility for the external links (to websites of third parties) lies solely with the operators of the linked pages. We have no control over the content or availability of those sites. No violations were evident to us at the time of linking.
 
 &nbsp;
 
-## Comments {#comments}
-
+<b>Comments</b>
+&nbsp;
 You are solely responsible for any comment you leave on this website. By commenting you grant Honeyboom LLP the unlimited right and license to use, copy, display, save, reproduce, distribute, or publish your content free of charge.
 
 &nbsp;
