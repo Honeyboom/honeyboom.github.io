@@ -38,6 +38,14 @@ ul, ol, dl, figure,
 }
 
 
+/**
+ * Centered titles
+ */
+.centered-title {
+  text-align: center;
+}
+
+
 
 /**
  * Images
@@ -219,10 +227,24 @@ pre {
 	text-align: center;
 }
 
+
+/**
+ * Default container
+ */
+
+.default-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
+  margin: 0 8vw $big-spacing-unit 8vw;
+}
+
+
 /**
  * NoScript Overlay
  */
- 
+
 noscript #overlay {
   background: rgba(0,0,0,0.35);
   width: 100%;
@@ -243,11 +265,11 @@ noscript .no-js {
   text-align: center;
   line-height: 3em;
   font-weight: 600;
-  
+
   p {
     display: inline-flex;
     margin-bottom: 0;
-  }  
+  }
 }
 
 
