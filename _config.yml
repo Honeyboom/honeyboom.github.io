@@ -25,7 +25,6 @@ facebook_username: honeyboom.xyz
 medium_username: honeyboom-xyz
 disqus_shortname: honeyboom
 bg-image: /assets/images/slide-homepage.jpg
-enforce_ssl: honeyboom.xyz
 future: true
 
 # Build settings

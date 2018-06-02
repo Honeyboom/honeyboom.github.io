@@ -1,32 +1,19 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+---
+layout: root
+---
 
-  {% include head.html %}
+{% if page.url == "/" %}
+  <a href="/coaching/"><img src="{{ site.bg-image }}" alt="Background image Honeyboom" class="bg-image"></a>
+  <div class="slogan"><p>Sharing Tools for Vibrant Relationships</p></div>
+{% endif %}
 
-  <body>
-    <noscript>
-      <div class="no-js">
-        <p>To view all our content, please enable JavaScript</p>
-      </div>
-      <div class="pusher"></div>
-      <div id="overlay"></div>
-    </noscript>
+{% include header.html %}
 
-		{% if page.url == "/" %}
-		  <a href="/coaching/"><img src="{{ site.bg-image }}" alt="Background image Honeyboom" class="bg-image"></a>
-		  <div class="slogan"><p>Sharing Tools for Vibrant Relationships</p></div>
-	  {% endif %}
+<main class="page-content" aria-label="Content">
+  <div class="wrapper">
+    {{ content }}
+  </div>
+</main>
 
-    {% include header.html %}
+{% include footer.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+    <noscript>
+      <div class="no-js">
+        <p>To view all our content, please enable JavaScript</p>
+      </div>
+      <div class="pusher"></div>
+      <div id="overlay"></div>
+    </noscript>
+  
+    {{ content }}
+  
+  </body>
+
+</html>
