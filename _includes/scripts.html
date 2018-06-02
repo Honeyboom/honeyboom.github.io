@@ -1,5 +1,8 @@
 <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+
+<!-- JQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 {% if page.url == "/read/" or page.url == "/watch/" %}
     <script src="/assets/js/sorting.js"></script>
     <script src="/assets/js/timebarrier.js"></script>
@@ -7,6 +10,8 @@
 {% if page.url == "/coaching/" %}
     <script src="/assets/js/coaching.js"></script>
 {% endif %}
+
+<!-- Redirection to https -->
 <script type="text/javascript">
 	var host = "honeyboom.xyz"
 	if ((host == window.location.host) && (window.location.protocol != "https:")) {
@@ -14,6 +19,7 @@
 	}
 </script>
 
+<!-- GDPR solution -->
 <script type="text/javascript">
  var _iub = _iub || []; _iub.csConfiguration = {"banner":{"textColor":"white","backgroundColor":"black"},"lang":"en","siteId":1174943,"cookiePolicyId":11652594}; </script><script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8" async>
 </script>
