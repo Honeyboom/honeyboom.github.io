@@ -480,7 +480,7 @@
 
 
 /**
- * Post Page
+ * Posts Pages - Watch and Read
  */
 
 .loading-icon {
@@ -514,21 +514,25 @@
 }
 
 .post-content-img {
+  width: 60%;
+
   p.post-meta {
     text-align: justify;
   }
   @include media-query($on-palm) {
+    width: 100%;
     margin-left: 0px;
     margin-bottom: $small-spacing-unit;
   }
 }
 
 .post-thumb {
-  min-width: 45%;
+  width: 40%;
   margin-right: $spacing-unit;
   margin-bottom: $spacing-unit;
 
   @include media-query($on-palm) {
+    width: 60%;
     align-self: center;
     margin-right: 0px;
     margin-bottom: $small-spacing-unit;
