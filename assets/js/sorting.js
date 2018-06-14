@@ -162,7 +162,7 @@ function removeHash () {
 
 
 window.onload = function () {
-  if(window.location.href.indexOf("watch") > -1 || window.location.href.indexOf("read") > -1) {
+  if(window.location.href.indexOf("blog") > -1) {
     timeBarrier();
   }
 
@@ -176,7 +176,7 @@ window.onload = function () {
     document.location="#"+tag;
     removeHash();
   }
-  else if(window.location.pathname === "/read/" || window.location.pathname === "/watch/") {
+  else if(window.location.pathname === "/blog/") {
   //to show pags previously selected and stored
     updateTags();
   }

@@ -1,6 +1,6 @@
 ---
-layout: readpage
-title: Read
+layout: blogpage
+title: Blog
 ---
 
 {% include sorting-table.html %}

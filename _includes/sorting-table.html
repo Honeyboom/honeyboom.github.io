@@ -1,22 +1,17 @@
 <div class="sorting-table">
 	<div class="tags-container">
-      	<ul class="blog-tags-list">
-        	<li class="blog-tag-item active" id="all-posts">
-        	   <a href onclick="order('chrono-date'); return false;">all</a>
-        	</li>
-            {% if page.url == "/watch/" %}
-                {% for tag in site.data.tags.watch %}
-                  	    <li class="blog-tag-item" id="{{ tag }}-item">
-                  	      <a href onclick="filter('{{ tag }}'); return false;">{{ tag }}</a>
-                  	    </li>
-          	    {% endfor %}
-            {% else if page.url == "/read/" %}
-                {% for tag in site.data.tags.read %}
-                        <li class="blog-tag-item" id="{{ tag }}-item">
-                          <a href onclick="filter('{{ tag }}'); return false;">{{ tag }}</a>
-                        </li>
-                {% endfor %}
-            {% endif %}
+    <ul class="blog-tags-list">
+     	<li class="blog-tag-item active" id="all-posts">
+        <a href onclick="order('chrono-date'); return false;">all</a>
+      </li>
+      {% for tags in site.tags %}
+      {% assign tag = tags | first %}
+      {% unless tag == "video" or tag == "link" %}
+	    <li class="blog-tag-item" id="{{ tag }}-item">
+	      <a href onclick="filter('{{ tag }}'); return false;">{{ tag }}</a>
+	    </li>
+      {% endunless %}
+	    {% endfor %}
  	 	</ul>
 	</div>
   <p class="selected-tags-text">Showing <b>all</b> posts ordered by date.</p>

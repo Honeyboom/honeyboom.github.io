@@ -22,7 +22,7 @@ enforce_ssl: honeyboom.xyz
 author: "Honeyboom"
 youtube_username: channel/UCFkEEtX7yPtYD0Om0GPwL7w
 facebook_username: honeyboom.xyz
-medium_username: honeyboom-xyz
+# medium_username: honeyboom-xyz
 disqus_shortname: honeyboom
 bg-image: /assets/images/slide-homepage.jpg
 future: true
@@ -44,10 +44,8 @@ plugins:
 menu:
   - title: "Coaching"
     url: "/coaching"
-  - title: "Watch"
-    url: "/watch"
-  - title: "Read"
-    url: "/read"
+  - title: "Blog"
+    url: "/blog"
   - title: "Silvia & Michal"
     url: "/silvia-michal"
 

@@ -7,12 +7,11 @@ layout: default
     <h1 class="post-title" itemprop="name headline">
 			{{ page.title | escape }}
     </h1>
-    
 
-		{% if page.tags contains 'video' %}
-		{% else %}
+
+		{% unless page.tags contains 'video' %}
 			{% assign video = 'false' %}
-		{% endif %}
+		{% endunless %}
 
     {% if page.image and video == 'false' %}
        <img src="{{ page.image }}" alt="Post Image">
@@ -39,26 +38,14 @@ layout: default
 	  {% if sorted_tags %}
 	    <p>Tags: </p>
   	{% endif %}
-	  
-    {% if page.tags contains "video" %}
-      {% for tag in sorted_tags %}
-      {% unless tag == "video" %}
-        <span class="tag"><a href="/watch/#{{ tag }}">{{ tag }}</a>&nbsp;</span>
-      {% endunless %}
-      {% endfor %}
-    {% else %}
-      {% for tag in sorted_tags %}
-      <span class="tag"><a href="/read/#{{ tag }}">{{ tag }}</a>&nbsp;</span>
-      {% endfor %}
-    {% endif %}
+
+    {% for tag in sorted_tags %}
+      <span class="tag"><a href="/blog/#{{ tag }}">{{ tag }}</a>&nbsp;</span>
+    {% endfor %}
 	</div>
-	
-	{% if page.tags contains "video" %}
-	  <p class="back-button"><a href="/watch">&#8617; Back &#8617;</a></p>
-  {% else %}
-    <p class="back-button"><a href="/read">&#8617; Back &#8617;</a></p>
-  {% endif %}
-  
+
+  <p class="back-button"><a href="/blog">&#8617; Back &#8617;</a></p>
+
   {% if site.disqus_shortname %}
     {% include disqus_comments.html %}
   {% endif %}

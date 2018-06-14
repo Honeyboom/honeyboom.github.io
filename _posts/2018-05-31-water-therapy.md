@@ -2,7 +2,7 @@
 layout: post
 title: "Aquatic Therapy with Linoi Raichman || Our LIFE-CHANGING experience with Water Flow"
 date: 2018-05-31 14:05:00 +0000
-tags: video do-it-yourself self travel misc
+tags: video inspiring-interviews
 image: /assets/images/posts/thumbnails/waterflow.jpg
 author: Honeyboom
 
