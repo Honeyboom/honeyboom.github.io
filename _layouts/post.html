@@ -40,7 +40,9 @@ layout: default
   	{% endif %}
 
     {% for tag in sorted_tags %}
+    {% unless tag contains "video" or tag contains "link" %}
       <span class="tag"><a href="/blog/#{{ tag }}">{{ tag }}</a>&nbsp;</span>
+    {% endunless %}
     {% endfor %}
 	</div>
 

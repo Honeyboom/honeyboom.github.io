@@ -71,6 +71,9 @@ social:
     - https://www.youtube.com/channel/UCFkEEtX7yPtYD0Om0GPwL7w
     - https://medium.com/honeyboom-xyz
 
+# Sorting table multiselection
+sort-multiselect: true
+
 
 
 # Exclude from processing.
