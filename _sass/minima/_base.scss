@@ -233,13 +233,20 @@ pre {
  */
 
 .default-container {
+   margin: 40px 8vw 0 8vw;
+}
+
+/**
+ * Objects Container - organizes them inside
+ */
+ 
+.object-container {
   display: flex;
   display: -webkit-flex;
   flex-flow: column nowrap;
   -webkit-flex-flow: column nowrap;
   margin: 0 8vw $big-spacing-unit 8vw;
 }
-
 
 /**
  * NoScript Overlay

@@ -287,10 +287,37 @@
   }
 }
 
+#retreat-image {
+  margin: $spacing-unit 8vw 0 8vw;
+  padding-bottom: $big-spacing-unit;
+}
+
+#retreat-text {
+  text-align: center;
+  padding: $small-spacing-unit;
+  background-color: rgba(224,224,224,0.6);
+  border-radius: 0 0 10px 10px;
+}
+
+@include media-query($on-palm) {
+  #retreat-image {
+    margin: $spacing-unit 5vw 0 5vw;
+  }
+  
+  #retreat-text {
+    font-size: $small-font-size;
+    border-radius: 0 0 5px 5px
+  }
+}
+
 
 .home-video {
   padding-bottom: 46.25% !important;
 	margin: $big-spacing-unit 7vw $big-spacing-unit 7vw !important;
+	
+	@include media-query($on-palm) {
+    margin: $spacing-unit 0 !important;
+  }
 }
 
 
@@ -1031,102 +1058,98 @@
 
 
 
-.bottom-container {
-   margin: 40px 8vw 0 8vw;
+.ebook {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+  margin-bottom: $big-spacing-unit;
 
-
-  .ebook {
-    display: flex;
-    display: -webkit-flex;
-    flex-flow: row nowrap;
-    -webkit-flex-flow: row nowrap;
-    margin-bottom: $big-spacing-unit;
-
-    .text-container {
-      display: inline-block;
-      width: 62.5%;
-      text-align: justify;
-      font-size: $small-font-size;
-      margin-left: 2.5%;
-
-      h2 {
-        font-weight: bold;
-        text-align: left;
-      }
-    }
-
-    .side-image {
-      display: inline-block;
-      width: 35%;
-      align-self: center;
-    }
-
-    @include media-query($on-palm) {
-      flex-flow: column;
-      -webkit-flex-flow: column;
-      align-items: center;
-
-      .side-image{
-        width: unset;
-      }
-
-      .text-container {
-        width: unset;
-        margin-left: 0;
-      }
-    }
-
-  }
-
-
-
-  .faq-image {
-    display: block;
-    margin: $spacing-unit calc(-15px - 8vw);
-    text-align: center;
-  }
-
-
-  .faq-container {
+  .text-container {
+    display: inline-block;
+    width: 62.5%;
+    text-align: justify;
     font-size: $small-font-size;
+    margin-left: 2.5%;
 
-    h3 {
+    h2 {
       font-weight: bold;
+      text-align: left;
     }
+  }
 
-    p {
-      text-align: justify;
-      margin: $small-font-size;
-      margin-top: 0;
-    }
-
-    ul {
-      margin-left: $small-spacing-unit + 30px;
-      margin-right: $small-spacing-unit;
-    }
+  .side-image {
+    display: inline-block;
+    width: 35%;
+    align-self: center;
   }
 
   @include media-query($on-palm) {
-    margin: 40px 5vw 0 5vw;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    align-items: center;
+
+    .side-image{
+      width: unset;
+    }
 
     .text-container {
-      width: auto;
-      float: none;
+      width: unset;
+      margin-left: 0;
     }
+  }
 
-    .side-image {
-      display: block;
-      text-align: center;
-      width: auto;
-      max-width: 300px;
-    }
+}
 
-    .faq-image {
-      margin: $spacing-unit calc(-15px - 5vw);
-    }
 
+
+.faq-image {
+  display: block;
+  margin: $spacing-unit calc(-15px - 8vw);
+  text-align: center;
+}
+
+
+.faq-container {
+  font-size: $small-font-size;
+
+  h3 {
+    font-weight: bold;
+  }
+
+  p {
+    text-align: justify;
+    margin: $small-font-size;
+    margin-top: 0;
+  }
+
+  ul {
+    margin-left: $small-spacing-unit + 30px;
+    margin-right: $small-spacing-unit;
   }
 }
+
+@include media-query($on-palm) {
+  margin: 40px 5vw 0 5vw;
+
+  .text-container {
+    width: auto;
+    float: none;
+  }
+
+  .side-image {
+    display: block;
+    text-align: center;
+    width: auto;
+    max-width: 300px;
+  }
+
+  .faq-image {
+    margin: $spacing-unit calc(-15px - 5vw);
+  }
+
+}
+
 
 
 /**
