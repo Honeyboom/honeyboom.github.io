@@ -479,6 +479,22 @@
   }
 }
 
+
+
+.read-more-btn {
+  display: inline-block;
+  border: 1px solid #745871;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1px 6px;
+  
+  &:hover {
+    cursor: pointer;
+    box-shadow: none;
+  }
+}
+
+
 .bottom-tags {
   margin-bottom: $spacing-unit;
 

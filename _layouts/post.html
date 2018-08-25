@@ -8,13 +8,22 @@ layout: default
 			{{ page.title | escape }}
     </h1>
 
-
-		{% unless page.tags contains 'video' %}
-			{% assign video = 'false' %}
-		{% endunless %}
+	{% unless page.tags contains 'video' %}
+		{% assign video = 'false' %}
+	{% endunless %}
 
     {% if page.image and video == 'false' %}
-       <img src="{{ page.image }}" alt="Post Image">
+        {% if page.tags contains 'link' %}
+        <div class="centering-container">
+            <a href="{{ page.link }}" target="_blank">
+                <img src="{{ page.image }}" alt="Post Image" style="width: 40vw;">
+            </a>
+        </div>
+        {% else %}
+        <div class="centering-container">
+            <img src="{{ page.image }}" alt="Post Image" style="width: 40vw;">
+        </div>
+        {% endif %}
     {% endif %}
 
      <p class="post-meta">
@@ -31,6 +40,14 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+
+    {% if page.tags contains 'link' %}
+        <div class="button-container">
+            <div class="read-more-btn">
+                <a href="{{ page.link }}" target="_blank"><strong>Read full article</strong></a>
+            </div>
+        </div>
+    {% endif %}
   </div>
 
 	<div class="bottom-tags">
