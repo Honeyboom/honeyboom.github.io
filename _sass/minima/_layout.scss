@@ -287,29 +287,6 @@
   }
 }
 
-#retreat-image {
-  margin: $spacing-unit 8vw 0 8vw;
-  padding-bottom: $big-spacing-unit;
-}
-
-#retreat-text {
-  text-align: center;
-  padding: $small-spacing-unit;
-  background-color: rgba(224,224,224,0.6);
-  border-radius: 0 0 10px 10px;
-}
-
-@include media-query($on-palm) {
-  #retreat-image {
-    margin: $spacing-unit 5vw 0 5vw;
-  }
-  
-  #retreat-text {
-    font-size: $small-font-size;
-    border-radius: 0 0 5px 5px
-  }
-}
-
 
 .home-video {
   padding-bottom: 46.25% !important;
